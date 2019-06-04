@@ -1,0 +1,202 @@
+Running on  9  nodes: node[2001-2007,2011-2012] , with  12  threads per node
+
+hostfile /tmp/hosts.76311
+12(x9)
+terminate called after throwing an instance of 'std::bad_alloc'
+  what():  std::bad_alloc
+
+shci:28985 terminated with signal 6 at PC=7fe429de31d7 SP=7ffd65352278.  Backtrace:
+/usr/lib64/libc.so.6(gsignal+0x37)[0x7fe429de31d7]
+/usr/lib64/libc.so.6(abort+0x148)[0x7fe429de48c8]
+/home/cyrus/tools/gcc/lib64/libstdc++.so.6(+0x8bc53)[0x7fe42a942c53]
+/home/cyrus/tools/gcc/lib64/libstdc++.so.6(+0x91db6)[0x7fe42a948db6]
+/home/cyrus/tools/gcc/lib64/libstdc++.so.6(+0x91df1)[0x7fe42a948df1]
+/home/cyrus/tools/gcc/lib64/libstdc++.so.6(+0x92024)[0x7fe42a949024]
+/home/cyrus/tools/gcc/lib64/libstdc++.so.6(+0x9250c)[0x7fe42a94950c]
+/home/cyrus/shci/shci[0x44e443]
+/home/cyrus/shci/shci[0x45050b]
+/home/cyrus/shci/shci[0x453188]
+/home/cyrus/shci/shci[0x492240]
+/home/cyrus/shci/shci[0x459dbf]
+/home/cyrus/shci/shci[0x407cf3]
+/usr/lib64/libc.so.6(__libc_start_main+0xf5)[0x7fe429dcfb35]
+/home/cyrus/shci/shci[0x407edf]
+terminate called after throwing an instance of 'std::bad_alloc'
+  what():  std::bad_alloc
+
+shci:5052 terminated with signal 6 at PC=7f36687491d7 SP=7fffc72a0e88.  Backtrace:
+terminate called after throwing an instance of 'std::bad_alloc'
+  what():  std::bad_alloc
+
+shci:26533 terminated with signal 6 at PC=7f79938d61d7 SP=7ffe016232d8.  Backtrace:
+/usr/lib64/libc.so.6(gsignal+0x37)[0x7f36687491d7]
+/usr/lib64/libc.so.6(abort+0x148)[0x7f366874a8c8]
+/home/cyrus/tools/gcc/lib64/libstdc++.so.6(+0x8bc53)[0x7f36692a8c53]
+/home/cyrus/tools/gcc/lib64/libstdc++.so.6(+0x91db6)[0x7f36692aedb6]
+/home/cyrus/tools/gcc/lib64/libstdc++.so.6(+0x91df1)[0x7f36692aedf1]
+/home/cyrus/tools/gcc/lib64/libstdc++.so.6(+0x92024)[0x7f36692af024]
+/home/cyrus/tools/gcc/lib64/libstdc++.so.6(+0x9250c)[0x7f36692af50c]
+/home/cyrus/shci/shci[0x44e443]
+/home/cyrus/shci/shci[0x45050b]
+/home/cyrus/shci/shci[0x453188]
+/home/cyrus/shci/shci[0x492240]
+/home/cyrus/shci/shci[0x459dbf]
+/home/cyrus/shci/shci[0x407cf3]
+/usr/lib64/libc.so.6(__libc_start_main+0xf5)[0x7f3668735b35]
+/home/cyrus/shci/shci[0x407edf]
+terminate called after throwing an instance of 'std::bad_alloc'
+  what():  std::bad_alloc
+
+shci:13381 terminated with signal 6 at PC=7fa20474f1d7 SP=7fff1f7dd728.  Backtrace:
+/usr/lib64/libc.so.6(gsignal+0x37)[0x7fa20474f1d7]
+/usr/lib64/libc.so.6(abort+0x148)[0x7fa2047508c8]
+/home/cyrus/tools/gcc/lib64/libstdc++.so.6(+0x8bc53)[0x7fa2052aec53]
+/home/cyrus/tools/gcc/lib64/libstdc++.so.6(+0x91db6)[0x7fa2052b4db6]
+/home/cyrus/tools/gcc/lib64/libstdc++.so.6(+0x91df1)[0x7fa2052b4df1]
+/home/cyrus/tools/gcc/lib64/libstdc++.so.6(+0x92024)[0x7fa2052b5024]
+/home/cyrus/tools/gcc/lib64/libstdc++.so.6(+0x9250c)[0x7fa2052b550c]
+/home/cyrus/shci/shci[0x44e443]
+/home/cyrus/shci/shci[0x45050b]
+/home/cyrus/shci/shci[0x453188]
+/home/cyrus/shci/shci[0x492240]
+/home/cyrus/shci/shci[0x459dbf]
+/home/cyrus/shci/shci[0x407cf3]
+/usr/lib64/libc.so.6(__libc_start_main+0xf5)[0x7fa20473bb35]
+/home/cyrus/shci/shci[0x407edf]
+/usr/lib64/libc.so.6(gsignal+0x37)[0x7f79938d61d7]
+/usr/lib64/libc.so.6(abort+0x148)[0x7f79938d78c8]
+/home/cyrus/tools/gcc/lib64/libstdc++.so.6(+0x8bc53)[0x7f7994435c53]
+/home/cyrus/tools/gcc/lib64/libstdc++.so.6(+0x91db6)[0x7f799443bdb6]
+/home/cyrus/tools/gcc/lib64/libstdc++.so.6(+0x91df1)[0x7f799443bdf1]
+/home/cyrus/tools/gcc/lib64/libstdc++.so.6(+0x92024)[0x7f799443c024]
+/home/cyrus/tools/gcc/lib64/libstdc++.so.6(+0x9250c)[0x7f799443c50c]
+/home/cyrus/shci/shci[0x44e443]
+/home/cyrus/shci/shci[0x45050b]
+/home/cyrus/shci/shci[0x453188]
+/home/cyrus/shci/shci[0x492240]
+/home/cyrus/shci/shci[0x459dbf]
+/home/cyrus/shci/shci[0x407cf3]
+/usr/lib64/libc.so.6(__libc_start_main+0xf5)[0x7f79938c2b35]
+/home/cyrus/shci/shci[0x407edf]
+terminate called after throwing an instance of 'std::bad_alloc'
+  what():  std::bad_alloc
+
+shci:18062 terminated with signal 6 at PC=7f31ac38f1d7 SP=7ffc738122f8.  Backtrace:
+/usr/lib64/libc.so.6(gsignal+0x37)[0x7f31ac38f1d7]
+/usr/lib64/libc.so.6(abort+0x148)[0x7f31ac3908c8]
+/home/cyrus/tools/gcc/lib64/libstdc++.so.6(+0x8bc53)[0x7f31aceeec53]
+/home/cyrus/tools/gcc/lib64/libstdc++.so.6(+0x91db6)[0x7f31acef4db6]
+/home/cyrus/tools/gcc/lib64/libstdc++.so.6(+0x91df1)[0x7f31acef4df1]
+/home/cyrus/tools/gcc/lib64/libstdc++.so.6(+0x92024)[0x7f31acef5024]
+/home/cyrus/tools/gcc/lib64/libstdc++.so.6(+0x9250c)[0x7f31acef550c]
+/home/cyrus/shci/shci[0x44e443]
+/home/cyrus/shci/shci[0x45050b]
+/home/cyrus/shci/shci[0x453188]
+/home/cyrus/shci/shci[0x492240]
+/home/cyrus/shci/shci[0x459dbf]
+/home/cyrus/shci/shci[0x407cf3]
+/usr/lib64/libc.so.6(__libc_start_main+0xf5)[0x7f31ac37bb35]
+/home/cyrus/shci/shci[0x407edf]
+terminate called after throwing an instance of 'std::bad_alloc'
+  what():  std::bad_alloc
+
+shci:9393 terminated with signal 6 at PC=7f6c452a21d7 SP=7ffd4097b118.  Backtrace:
+/usr/lib64/libc.so.6(gsignal+0x37)[0x7f6c452a21d7]
+/usr/lib64/libc.so.6(abort+0x148)[0x7f6c452a38c8]
+/home/cyrus/tools/gcc/lib64/libstdc++.so.6(+0x8bc53)[0x7f6c45e01c53]
+/home/cyrus/tools/gcc/lib64/libstdc++.so.6(+0x91db6)[0x7f6c45e07db6]
+/home/cyrus/tools/gcc/lib64/libstdc++.so.6(+0x91df1)[0x7f6c45e07df1]
+/home/cyrus/tools/gcc/lib64/libstdc++.so.6(+0x92024)[0x7f6c45e08024]
+/home/cyrus/tools/gcc/lib64/libstdc++.so.6(+0x9250c)[0x7f6c45e0850c]
+/home/cyrus/shci/shci[0x44e443]
+/home/cyrus/shci/shci[0x45050b]
+/home/cyrus/shci/shci[0x453188]
+/home/cyrus/shci/shci[0x492240]
+/home/cyrus/shci/shci[0x459dbf]
+/home/cyrus/shci/shci[0x407cf3]
+/usr/lib64/libc.so.6(__libc_start_main+0xf5)[0x7f6c4528eb35]
+/home/cyrus/shci/shci[0x407edf]
+terminate called after throwing an instance of 'std::bad_alloc'
+  what():  std::bad_alloc
+
+shci:31857 terminated with signal 6 at PC=7f59019db1d7 SP=7fff1f6eba68.  Backtrace:
+/usr/lib64/libc.so.6(gsignal+0x37)[0x7f59019db1d7]
+/usr/lib64/libc.so.6(abort+0x148)[0x7f59019dc8c8]
+/home/cyrus/tools/gcc/lib64/libstdc++.so.6(+0x8bc53)[0x7f590253ac53]
+/home/cyrus/tools/gcc/lib64/libstdc++.so.6(+0x91db6)[0x7f5902540db6]
+/home/cyrus/tools/gcc/lib64/libstdc++.so.6(+0x91df1)[0x7f5902540df1]
+/home/cyrus/tools/gcc/lib64/libstdc++.so.6(+0x92024)[0x7f5902541024]
+/home/cyrus/tools/gcc/lib64/libstdc++.so.6(+0x9250c)[0x7f590254150c]
+/home/cyrus/shci/shci[0x44e443]
+/home/cyrus/shci/shci[0x45050b]
+/home/cyrus/shci/shci[0x453188]
+/home/cyrus/shci/shci[0x492240]
+/home/cyrus/shci/shci[0x459dbf]
+/home/cyrus/shci/shci[0x407cf3]
+/usr/lib64/libc.so.6(__libc_start_main+0xf5)[0x7f59019c7b35]
+/home/cyrus/shci/shci[0x407edf]
+terminate called after throwing an instance of 'std::bad_alloc'
+  what():  std::bad_alloc
+
+shci:29285 terminated with signal 6 at PC=7f2f7348e1d7 SP=7ffc81a7d6c8.  Backtrace:
+/usr/lib64/libc.so.6(gsignal+0x37)[0x7f2f7348e1d7]
+/usr/lib64/libc.so.6(abort+0x148)[0x7f2f7348f8c8]
+/home/cyrus/tools/gcc/lib64/libstdc++.so.6(+0x8bc53)[0x7f2f73fedc53]
+/home/cyrus/tools/gcc/lib64/libstdc++.so.6(+0x91db6)[0x7f2f73ff3db6]
+/home/cyrus/tools/gcc/lib64/libstdc++.so.6(+0x91df1)[0x7f2f73ff3df1]
+/home/cyrus/tools/gcc/lib64/libstdc++.so.6(+0x92024)[0x7f2f73ff4024]
+/home/cyrus/tools/gcc/lib64/libstdc++.so.6(+0x9250c)[0x7f2f73ff450c]
+/home/cyrus/shci/shci[0x44e443]
+/home/cyrus/shci/shci[0x45050b]
+/home/cyrus/shci/shci[0x453188]
+/home/cyrus/shci/shci[0x492240]
+/home/cyrus/shci/shci[0x459dbf]
+/home/cyrus/shci/shci[0x407cf3]
+/usr/lib64/libc.so.6(__libc_start_main+0xf5)[0x7f2f7347ab35]
+/home/cyrus/shci/shci[0x407edf]
+terminate called after throwing an instance of 'std::bad_alloc'
+  what():  std::bad_alloc
+
+shci:21443 terminated with signal 6 at PC=7f61b92951d7 SP=7fffff7238e8.  Backtrace:
+/usr/lib64/libc.so.6(gsignal+0x37)[0x7f61b92951d7]
+/usr/lib64/libc.so.6(abort+0x148)[0x7f61b92968c8]
+/home/cyrus/tools/gcc/lib64/libstdc++.so.6(+0x8bc53)[0x7f61b9df4c53]
+/home/cyrus/tools/gcc/lib64/libstdc++.so.6(+0x91db6)[0x7f61b9dfadb6]
+/home/cyrus/tools/gcc/lib64/libstdc++.so.6(+0x91df1)[0x7f61b9dfadf1]
+/home/cyrus/tools/gcc/lib64/libstdc++.so.6(+0x92024)[0x7f61b9dfb024]
+/home/cyrus/tools/gcc/lib64/libstdc++.so.6(+0x9250c)[0x7f61b9dfb50c]
+/home/cyrus/shci/shci[0x44e443]
+/home/cyrus/shci/shci[0x45050b]
+/home/cyrus/shci/shci[0x453188]
+/home/cyrus/shci/shci[0x492240]
+/home/cyrus/shci/shci[0x459dbf]
+/home/cyrus/shci/shci[0x407cf3]
+/usr/lib64/libc.so.6(__libc_start_main+0xf5)[0x7f61b9281b35]
+/home/cyrus/shci/shci[0x407edf]
+[node2006.physics.cornell.edu:mpispawn_7][readline] Unexpected End-Of-File on file descriptor 6. MPI process died?
+[node2006.physics.cornell.edu:mpispawn_7][mtpmi_processops] Error while reading PMI socket. MPI process died?
+[node2002.physics.cornell.edu:mpispawn_2][readline] Unexpected End-Of-File on file descriptor 6. MPI process died?
+[node2002.physics.cornell.edu:mpispawn_2][mtpmi_processops] Error while reading PMI socket. MPI process died?
+[node2001.physics.cornell.edu:mpispawn_0][readline] Unexpected End-Of-File on file descriptor 5. MPI process died?
+[node2001.physics.cornell.edu:mpispawn_0][mtpmi_processops] Error while reading PMI socket. MPI process died?
+[node2006.physics.cornell.edu:mpispawn_7][child_handler] MPI process (rank: 7, pid: 18062) exited with status 1
+[node2004.physics.cornell.edu:mpispawn_3][readline] Unexpected End-Of-File on file descriptor 6. MPI process died?
+[node2004.physics.cornell.edu:mpispawn_3][mtpmi_processops] Error while reading PMI socket. MPI process died?
+[node2003.physics.cornell.edu:mpispawn_5][readline] Unexpected End-Of-File on file descriptor 6. MPI process died?
+[node2003.physics.cornell.edu:mpispawn_5][mtpmi_processops] Error while reading PMI socket. MPI process died?
+[node2011.physics.cornell.edu:mpispawn_6][readline] Unexpected End-Of-File on file descriptor 6. MPI process died?
+[node2011.physics.cornell.edu:mpispawn_6][mtpmi_processops] Error while reading PMI socket. MPI process died?
+[node2012.physics.cornell.edu:mpispawn_4][readline] Unexpected End-Of-File on file descriptor 6. MPI process died?
+[node2012.physics.cornell.edu:mpispawn_4][mtpmi_processops] Error while reading PMI socket. MPI process died?
+[node2007.physics.cornell.edu:mpispawn_8][readline] Unexpected End-Of-File on file descriptor 6. MPI process died?
+[node2007.physics.cornell.edu:mpispawn_8][mtpmi_processops] Error while reading PMI socket. MPI process died?
+[node2005.physics.cornell.edu:mpispawn_1][readline] Unexpected End-Of-File on file descriptor 6. MPI process died?
+[node2005.physics.cornell.edu:mpispawn_1][mtpmi_processops] Error while reading PMI socket. MPI process died?
+[node2011.physics.cornell.edu:mpispawn_6][child_handler] MPI process (rank: 6, pid: 13381) exited with status 1
+[node2001.physics.cornell.edu:mpispawn_0][child_handler] MPI process (rank: 0, pid: 5052) exited with status 1
+[node2002.physics.cornell.edu:mpispawn_2][child_handler] MPI process (rank: 2, pid: 29285) exited with status 1
+[node2003.physics.cornell.edu:mpispawn_5][child_handler] MPI process (rank: 5, pid: 26533) exited with status 1
+[node2012.physics.cornell.edu:mpispawn_4][child_handler] MPI process (rank: 4, pid: 9393) exited with status 1
+[node2004.physics.cornell.edu:mpispawn_3][child_handler] MPI process (rank: 3, pid: 21443) exited with status 1
+[node2005.physics.cornell.edu:mpispawn_1][child_handler] MPI process (rank: 1, pid: 31857) exited with status 1
+[node2007.physics.cornell.edu:mpispawn_8][child_handler] MPI process (rank: 8, pid: 28985) exited with status 1

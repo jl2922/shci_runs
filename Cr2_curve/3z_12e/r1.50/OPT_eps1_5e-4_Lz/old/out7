@@ -1,0 +1,156 @@
+Semistochastic Heat-bath Configuration Interation (SHCI)
+
+Start time: Sat Oct 27 17:04:23 2018
+Infrastructure: 9 nodes * 12 threads
+Configuration:
+{
+  "chem": {
+    "irrep_occs_dn": [
+      2,
+      0,
+      0,
+      1,
+      0,
+      1,
+      1,
+      0,
+      1,
+      0
+    ],
+    "irrep_occs_up": [
+      2,
+      0,
+      0,
+      1,
+      0,
+      1,
+      1,
+      0,
+      1,
+      0
+    ],
+    "irreps": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "point_group": "dih"
+  },
+  "eps_vars": [
+    0.0002,
+    0.0001,
+    5e-05,
+    2e-05,
+    1e-05
+  ],
+  "eps_vars_schedule": [
+    0.005,
+    0.002,
+    0.001,
+    0.0005
+  ],
+  "load_integrals_cache": true,
+  "n_dn": 6,
+  "n_up": 6,
+  "system": "chem",
+  "target_error": 1e-05,
+  "time_sym": true,
+  "var_only": false
+}
+Timing format: [DIFF/SECTION/TOTAL]
+
+BEG OF setup [0.0/1.0]GB [0.000/0.000/0.000]s
+
+BEG OF load integrals << setup [0.0/1.0]GB [0.004/0.000/0.004]s
+n_orbs: 68
+n_elecs (from FCIDUMP): 12
+orb_sym: 1 -6 6 1 7 -7 -8 8 2 5 -5 2 -6 6 1 7 -7 -6 6 1 7 -7 -10 10 2 -8 8 -6 6 5 -5 1 2 -6 6 9 -9 5 -5 1 5 -5 -8 8 2 2 7 -7 -8 8 1 2 -6 6 2 1 5 -5 -6 6 1 5 -5 1 -6 6 2 0 
+Convert to Adam's notation:
+1 6 4 1 7 9 10 8 2 3 5 2 6 4 1 7 9 6 4 1 7 9 14 12 2 10 8 6 4 3 5 1 2 6 4 11 13 3 5 1 3 5 10 8 2 2 7 9 10 8 1 2 6 4 2 1 3 5 6 4 1 3 5 1 6 4 2 4294967288 
+END OF load fcidump [0.1/1.1]GB [4.050/4.050/4.054]s
+HF det up: 0 1 2 3 4 5 
+HF det dn: 0 1 2 3 4 5 
+Reorder skipped.
+Orbitals energy:
+#  0: E =  -0.231348719731, sym =  1, origin #  0
+#  1: E =  -0.425745343750, sym =  6, origin #  1
+#  2: E =  -0.425745343750, sym =  4, origin #  2
+#  3: E =  -0.375345411628, sym =  1, origin #  3
+#  4: E =  -0.287197208277, sym =  7, origin #  4
+#  5: E =  -0.287197208277, sym =  9, origin #  5
+#  6: E =   0.184161273162, sym = 10, origin #  6
+#  7: E =   0.184161273162, sym =  8, origin #  7
+#  8: E =   0.368801200400, sym =  2, origin #  8
+#  9: E =   0.354301213146, sym =  3, origin #  9
+# 10: E =   0.354301213146, sym =  5, origin # 10
+# 11: E =   0.088101938486, sym =  2, origin # 11
+# 12: E =   0.111453535914, sym =  6, origin # 12
+# 13: E =   0.111453535914, sym =  4, origin # 13
+# 14: E =   0.448928796825, sym =  1, origin # 14
+# 15: E =   0.813089800392, sym =  7, origin # 15
+# 16: E =   0.813089800392, sym =  9, origin # 16
+# 17: E =   1.267214539990, sym =  6, origin # 17
+# 18: E =   1.267214539990, sym =  4, origin # 18
+# 19: E =   0.677475465261, sym =  1, origin # 19
+# 20: E =   1.989732492662, sym =  7, origin # 20
+# 21: E =   1.989732492662, sym =  9, origin # 21
+# 22: E =   2.037411501755, sym = 14, origin # 22
+# 23: E =   2.037411501755, sym = 12, origin # 23
+# 24: E =   1.033026863385, sym =  2, origin # 24
+# 25: E =   1.430502263108, sym = 10, origin # 25
+# 26: E =   1.430502263108, sym =  8, origin # 26
+# 27: E =   2.295196437220, sym =  6, origin # 27
+# 28: E =   2.295196437220, sym =  4, origin # 28
+# 29: E =   0.612667175082, sym =  3, origin # 29
+# 30: E =   0.612667175082, sym =  5, origin # 30
+# 31: E =   1.115440322337, sym =  1, origin # 31
+# 32: E =   0.844949145205, sym =  2, origin # 32
+# 33: E =   1.019971134234, sym =  6, origin # 33
+# 34: E =   1.019971134234, sym =  4, origin # 34
+# 35: E =   3.077152645059, sym = 11, origin # 35
+# 36: E =   3.077152645059, sym = 13, origin # 36
+# 37: E =   4.295291509320, sym =  3, origin # 37
+# 38: E =   4.295291509320, sym =  5, origin # 38
+# 39: E =   2.991381952506, sym =  1, origin # 39
+# 40: E =   2.809323610345, sym =  3, origin # 40
+# 41: E =   2.809323610345, sym =  5, origin # 41
+# 42: E =   3.752558676004, sym = 10, origin # 42
+# 43: E =   3.752558676004, sym =  8, origin # 43
+# 44: E =   5.905814874491, sym =  2, origin # 44
+# 45: E =   3.096619830365, sym =  2, origin # 45
+# 46: E =   2.877260459416, sym =  7, origin # 46
+# 47: E =   2.877260459416, sym =  9, origin # 47
+# 48: E =   3.286699225394, sym = 10, origin # 48
+# 49: E =   3.286699225394, sym =  8, origin # 49
+# 50: E =   4.284523615477, sym =  1, origin # 50
+# 51: E =   3.764032751103, sym =  2, origin # 51
+# 52: E =   3.917118264624, sym =  6, origin # 52
+# 53: E =   3.917118264624, sym =  4, origin # 53
+# 54: E =   5.923191956578, sym =  2, origin # 54
+# 55: E =   2.945842462073, sym =  1, origin # 55
+# 56: E =   4.831339585835, sym =  3, origin # 56
+# 57: E =   4.831339585835, sym =  5, origin # 57
+# 58: E =   5.929885931370, sym =  6, origin # 58
+# 59: E =   5.929885931370, sym =  4, origin # 59
+# 60: E =   3.765199109108, sym =  1, origin # 60
+# 61: E =   3.866483137372, sym =  3, origin # 61
+# 62: E =   3.866483137372, sym =  5, origin # 62
+# 63: E =   5.159820273927, sym =  1, origin # 63
+# 64: E =   4.904057322620, sym =  6, origin # 64
+# 65: E =   4.904057322620, sym =  4, origin # 65
+# 66: E =   3.920863521399, sym =  2, origin # 66
+# 67: E =   0.000000000000, sym = 4294967288, origin # 67
+HF det up: 0 1 2 3 4 5 
+HF det dn: 0 1 2 3 4 5 
+END OF reorder orbitals [0.1/1.1]GB [0.105/4.154/4.158]s
+FCIDUMP cache saved to: integrals_cache.dat
+END OF load integrals << setup [0.1/1.1]GB [0.079/4.232/4.236]s
+
+BEG OF setup hci queue << setup [0.1/1.1]GB [0.000/0.000/4.237]s

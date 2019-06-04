@@ -1,0 +1,14 @@
+BEG OF psto 1.00e-07 << eps_var 1.00e-05 << perturbation [20.8/24.5]GB [0.386/0.000/942.652]s
+Number of psto batches: 16
+END OF determine number of psto batches [21.4/25.1]GB [4.395/4.395/947.047]s
+
+BEG OF #1/16 << psto 1.00e-07 << eps_var 1.00e-05 << perturbation [21.4/25.1]GB [0.010/0.000/947.057]s
+20% 40% 60% 80% 100% 
+Number of psto pt dets: 1,778,061,050
+END OF create hc sums [126.8/130.5]GB [728.919/728.919/1675.975]s
+PT psto batch correction: -0.0001528879 Ha
+PT psto correction (eps1= 1.00e-05): -0.0024462067 +- 0.0000009997 Ha
+PT psto total energy (eps1= 1.00e-05): -2099.5471896881 +- 0.0000009997 Ha
+Correlation energy (eps1= 1.00e-05): -1.0185552823 +- 0.0000009997 Ha
+END OF #1/16 << psto 1.00e-07 << eps_var 1.00e-05 << perturbation [126.8/130.5]GB [166.247/895.165/1842.222]s
+END OF psto 1.00e-07 << eps_var 1.00e-05 << perturbation [126.8/130.5]GB [0.000/899.570/1842.222]s

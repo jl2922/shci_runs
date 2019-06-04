@@ -1,0 +1,7 @@
+eps1= 2.00e-04 ndets= 655746 energy_var= -2099.51081266	    energy_tot -2099.5435796158 +- 0.0000048272 Ha
+eps1= 1.00e-04 ndets= 1819649 energy_var= -2099.52215941    energy_tot -2099.5449764113 +- 0.0000039008 Ha
+eps1= 5.00e-05 ndets= 5080132 energy_var= -2099.53060475    energy_tot -2099.5459707430 +- 0.0000027097 Ha
+eps1= 2.00e-05 ndets= 19680871 energy_var= -2099.53801034   energy_tot -2099.5468505188 +- 0.0000018817 Ha
+eps1= 1.50e-05 ndets= 29846157 energy_var= -2099.53963645   energy_tot -2099.5470282405 +- 0.0000018477 Ha
+eps1= 1.00e-05 ndets= 53562850 energy_var= -2099.54153173   energy_tot -2099.5472213964 +- 0.0000026730 Ha
+(0.95 Conf.) Extrapolated Energy, using quadratic fit                  -2099.5479150572 +- 0.0001041497

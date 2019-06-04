@@ -1,0 +1,29 @@
+Submitted batch job 4422606
+Submitted batch job 4422607
+Submitted batch job 4422608
+Submitted batch job 4422609
+Submitted batch job 4422610
+Submitted batch job 4422611
+Submitted batch job 4422612
+['r2.50', 'r1.50', 'r1.68', 'r2.75', 'r2.00', 'r3.00', 'r1.80', 'r1.60', 'r2.25', 'r3.25']
+1.50
+cp FCIDUMPS/FCIDUMP_1.50 r1.50 && cd r1.50 && ln -s FCIDUMP_1.50 FCIDUMP
+cp config.json r1.50 && cd r1.50 && sbatch ../run_lm.sh
+1.68
+cp FCIDUMPS/FCIDUMP_1.68 r1.68 && cd r1.68 && ln -s FCIDUMP_1.68 FCIDUMP
+cp config.json r1.68 && cd r1.68 && sbatch ../run_lm.sh
+2.75
+cp FCIDUMPS/FCIDUMP_2.75 r2.75 && cd r2.75 && ln -s FCIDUMP_2.75 FCIDUMP
+cp config.json r2.75 && cd r2.75 && sbatch ../run_lm.sh
+2.00
+cp FCIDUMPS/FCIDUMP_2.00 r2.00 && cd r2.00 && ln -s FCIDUMP_2.00 FCIDUMP
+cp config.json r2.00 && cd r2.00 && sbatch ../run_lm.sh
+1.80
+cp FCIDUMPS/FCIDUMP_1.80 r1.80 && cd r1.80 && ln -s FCIDUMP_1.80 FCIDUMP
+cp config.json r1.80 && cd r1.80 && sbatch ../run_lm.sh
+1.60
+cp FCIDUMPS/FCIDUMP_1.60 r1.60 && cd r1.60 && ln -s FCIDUMP_1.60 FCIDUMP
+cp config.json r1.60 && cd r1.60 && sbatch ../run_lm.sh
+3.25
+cp FCIDUMPS/FCIDUMP_3.25 r3.25 && cd r3.25 && ln -s FCIDUMP_3.25 FCIDUMP
+cp config.json r3.25 && cd r3.25 && sbatch ../run_lm.sh
