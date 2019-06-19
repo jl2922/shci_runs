@@ -1,0 +1,2331 @@
+Running on  2  nodes: node[3101-3102] , with  32  threads per node
+
+hostfile /tmp/hosts.99713
+cpus_per_node(# nodes) 32(x2)
+Semistochastic Heat-bath Configuration Interation (SHCI)
+
+Start time: Sat Jun  8 08:19:22 2019
+Infrastructure: 2 nodes * 32 threads
+Configuration:
+{
+  "chem": {
+    "irrep_occs_dn": [
+      4,
+      2,
+      1,
+      2,
+      1,
+      2,
+      1,
+      0,
+      1
+    ],
+    "irrep_occs_up": [
+      4,
+      2,
+      1,
+      2,
+      1,
+      2,
+      1,
+      0,
+      1
+    ],
+    "irreps": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "point_group": "Dih"
+  },
+  "eps_vars": [
+    0.0002,
+    0.0001,
+    5e-05
+  ],
+  "eps_vars_schedule": [
+    0.002,
+    0.002,
+    0.002,
+    0.002,
+    0.002,
+    0.002,
+    0.001,
+    0.001,
+    0.001,
+    0.001,
+    0.001,
+    0.001,
+    0.001,
+    0.0005,
+    0.0005,
+    0.0005,
+    0.0005,
+    0.0005,
+    0.0005
+  ],
+  "load_integrals_cache": true,
+  "n_dn": 14,
+  "n_up": 14,
+  "system": "chem",
+  "target_error": 1e-05,
+  "time_sym": true
+}
+Timing format: [DIFF/SECTION/TOTAL]
+
+BEG OF setup [0.0/3.8]GB [0.001/0.001/0.001]s
+
+BEG OF load integrals << setup [0.0/3.8]GB [0.004/0.000/0.004]s
+Loaded FCIDUMP cache from: integrals_cache.dat
+END OF load integrals << setup [0.0/3.9]GB [0.075/0.075/0.078]s
+
+BEG OF setup hci queue << setup [0.0/3.9]GB [0.001/0.000/0.079]s
+Max hci queue elem: 0.3563651226 Ha
+Number of entries in hci queue: 1,786,582
+END OF setup hci queue << setup [0.1/3.9]GB [0.107/0.107/0.186]s
+HF energy: -2098.4529210963 Ha
+END OF setup [0.1/3.9]GB [0.002/0.187/0.187]s
+
+BEG OF variation [0.1/3.9]GB [0.000/0.000/0.187]s
+Final iteration 0 HF ndets= 1 energy= -2098.45292110
+
+BEG OF eps_var 2.00e-04 << variation [0.1/3.9]GB [0.000/0.000/0.187]s
+Try Loading Wavefunction wf_eps1_2.00e-04.dat
+
+BEG OF extra 2.00e-03 << eps_var 2.00e-04 << variation [0.1/3.9]GB [0.007/0.000/0.194]s
+20% 40% 60% 80% 100% 
+Number of dets / new dets: 11,035 / 11,034
+END OF get next det list [0.1/3.9]GB [0.021/0.021/0.215]s
+END OF update unique ab [0.1/3.9]GB [0.008/0.029/0.223]s
+END OF create abm1 [0.1/3.9]GB [0.018/0.047/0.241]s
+Outer size of a/b singles: 3,927 / 0
+Full size of absingles: 87,398
+END OF create absingles [0.1/3.9]GB [0.017/0.064/0.258]s
+10% 20% 30% 40% 50% 60% 70% 80% 90% 100% 
+Number of nonzero elems: 2,915,559
+END OF generate sparse hamiltonian [0.1/3.9]GB [0.065/0.129/0.322]s
+Davidson #0: -2098.4529210963
+Davidson #1: -2098.7704705135
+Davidson #2: -2099.2611674862
+Davidson #3: -2099.4001168176
+Davidson #4: -2099.4106352057
+Davidson #5: -2099.4111844681
+Davidson #6: -2099.4112995212
+Davidson #7: -2099.4113136451
+Davidson #8: -2099.4113168973
+END OF diagonalize sparse hamiltonian [0.1/3.9]GB [0.037/0.165/0.359]s
+Iteration 1 eps1= 2.00e-03 ndets= 11,035 energy= -2099.41131690
+END OF extra 2.00e-03 << eps_var 2.00e-04 << variation [0.1/3.9]GB [0.001/0.166/0.359]s
+
+BEG OF extra 2.00e-03 << eps_var 2.00e-04 << variation [0.1/3.9]GB [0.000/0.000/0.360]s
+20% 40% 60% 80% 100% 
+Number of dets / new dets: 17,781 / 6,746
+END OF get next det list [0.1/3.9]GB [0.225/0.225/0.585]s
+END OF update unique ab [0.1/3.9]GB [0.007/0.232/0.592]s
+END OF create abm1 [0.1/3.9]GB [0.010/0.242/0.601]s
+Outer size of a/b singles: 5,516 / 0
+Full size of absingles: 65,180
+END OF create absingles [0.1/3.9]GB [0.009/0.251/0.610]s
+10% 20% 30% 40% 50% 60% 70% 80% 90% 100% 
+Number of nonzero elems: 3,427,591
+END OF generate sparse hamiltonian [0.1/3.9]GB [0.024/0.275/0.634]s
+Davidson #0: -2099.4113168973
+Davidson #1: -2099.5206328957
+Davidson #2: -2099.5595150506
+Davidson #3: -2099.5679564675
+Davidson #4: -2099.5712263474
+Davidson #5: -2099.5723267554
+Davidson #6: -2099.5731032938
+Davidson #7: -2099.5738264272
+Davidson #8: -2099.5742638980
+END OF diagonalize sparse hamiltonian [0.1/3.9]GB [0.041/0.315/0.675]s
+Iteration 2 eps1= 2.00e-03 ndets= 17,781 energy= -2099.57426390
+END OF extra 2.00e-03 << eps_var 2.00e-04 << variation [0.1/3.9]GB [0.001/0.315/0.675]s
+
+BEG OF extra 2.00e-03 << eps_var 2.00e-04 << variation [0.1/3.9]GB [0.000/0.000/0.675]s
+20% 40% 60% 80% 100% 
+Number of dets / new dets: 25,803 / 8,022
+END OF get next det list [0.1/3.9]GB [0.109/0.109/0.784]s
+END OF update unique ab [0.1/3.9]GB [0.009/0.118/0.793]s
+END OF create abm1 [0.1/3.9]GB [0.014/0.132/0.806]s
+Outer size of a/b singles: 7,172 / 0
+Full size of absingles: 96,902
+END OF create absingles [0.1/3.9]GB [0.015/0.146/0.821]s
+10% 20% 30% 40% 50% 60% 70% 80% 90% 100% 
+Number of nonzero elems: 4,172,549
+END OF generate sparse hamiltonian [0.1/3.9]GB [0.049/0.194/0.869]s
+Davidson #0: -2099.5742638980
+Davidson #1: -2099.6112577188
+Davidson #2: -2099.6229173456
+Davidson #3: -2099.6262782853
+Davidson #4: -2099.6276762502
+Davidson #5: -2099.6281363124
+Davidson #6: -2099.6287879706
+Davidson #7: -2099.6292707524
+Davidson #8: -2099.6295809211
+END OF diagonalize sparse hamiltonian [0.1/3.9]GB [0.051/0.245/0.920]s
+Iteration 3 eps1= 2.00e-03 ndets= 25,803 energy= -2099.62958092
+END OF extra 2.00e-03 << eps_var 2.00e-04 << variation [0.1/3.9]GB [0.001/0.246/0.920]s
+
+BEG OF extra 2.00e-03 << eps_var 2.00e-04 << variation [0.1/3.9]GB [0.000/0.000/0.921]s
+20% 40% 60% 80% 100% 
+Number of dets / new dets: 29,875 / 4,072
+END OF get next det list [0.1/3.9]GB [0.169/0.169/1.090]s
+END OF update unique ab [0.1/3.9]GB [0.008/0.176/1.097]s
+END OF create abm1 [0.1/3.9]GB [0.013/0.189/1.109]s
+Outer size of a/b singles: 8,125 / 0
+Full size of absingles: 104,198
+END OF create absingles [0.1/3.9]GB [0.013/0.202/1.122]s
+10% 20% 30% 40% 50% 60% 70% 80% 90% 100% 
+Number of nonzero elems: 4,614,309
+END OF generate sparse hamiltonian [0.1/3.9]GB [0.037/0.238/1.159]s
+Davidson #0: -2099.6295809211
+Davidson #1: -2099.6422766635
+Davidson #2: -2099.6443473733
+Davidson #3: -2099.6450889621
+Davidson #4: -2099.6454491196
+Davidson #5: -2099.6455895520
+Davidson #6: -2099.6457651559
+Davidson #7: -2099.6459114070
+Davidson #8: -2099.6460281684
+END OF diagonalize sparse hamiltonian [0.1/4.0]GB [0.049/0.287/1.207]s
+Iteration 4 eps1= 2.00e-03 ndets= 29,875 energy= -2099.64602817
+END OF extra 2.00e-03 << eps_var 2.00e-04 << variation [0.1/4.0]GB [0.001/0.287/1.208]s
+
+BEG OF extra 2.00e-03 << eps_var 2.00e-04 << variation [0.1/4.0]GB [0.000/0.000/1.208]s
+20% 40% 60% 80% 100% 
+Number of dets / new dets: 31,257 / 1,382
+END OF get next det list [0.1/4.0]GB [0.163/0.163/1.370]s
+END OF update unique ab [0.1/4.0]GB [0.004/0.167/1.374]s
+END OF create abm1 [0.1/4.0]GB [0.006/0.172/1.380]s
+Outer size of a/b singles: 8,478 / 0
+Full size of absingles: 67,972
+END OF create absingles [0.1/4.0]GB [0.007/0.178/1.386]s
+10% 20% 30% 40% 50% 60% 70% 80% 90% 100% 
+Number of nonzero elems: 4,776,037
+END OF generate sparse hamiltonian [0.1/4.0]GB [0.014/0.192/1.400]s
+Davidson #0: -2099.6460281684
+Davidson #1: -2099.6515191836
+Davidson #2: -2099.6521594255
+Davidson #3: -2099.6523066947
+Davidson #4: -2099.6523824192
+Davidson #5: -2099.6524080178
+Davidson #6: -2099.6524428340
+Davidson #7: -2099.6524816638
+Davidson #8: -2099.6525117108
+END OF diagonalize sparse hamiltonian [0.1/4.0]GB [0.050/0.242/1.450]s
+Iteration 5 eps1= 2.00e-03 ndets= 31,257 energy= -2099.65251171
+END OF extra 2.00e-03 << eps_var 2.00e-04 << variation [0.1/4.0]GB [0.001/0.243/1.450]s
+
+BEG OF extra 2.00e-03 << eps_var 2.00e-04 << variation [0.1/4.0]GB [0.000/0.000/1.450]s
+20% 40% 60% 80% 100% 
+Number of dets / new dets: 32,083 / 826
+END OF get next det list [0.1/4.0]GB [0.142/0.142/1.593]s
+END OF update unique ab [0.1/4.0]GB [0.003/0.145/1.595]s
+END OF create abm1 [0.1/4.0]GB [0.004/0.149/1.599]s
+Outer size of a/b singles: 8,713 / 0
+Full size of absingles: 56,290
+END OF create absingles [0.1/4.0]GB [0.005/0.154/1.604]s
+10% 20% 30% 40% 50% 60% 70% 80% 90% 100% 
+Number of nonzero elems: 4,879,565
+END OF generate sparse hamiltonian [0.1/4.0]GB [0.011/0.164/1.614]s
+Davidson #0: -2099.6525117108
+Davidson #1: -2099.6548661826
+Davidson #2: -2099.6550435308
+Davidson #3: -2099.6550912222
+Davidson #4: -2099.6551116127
+Davidson #5: -2099.6551205574
+Davidson #6: -2099.6551290721
+Davidson #7: -2099.6551397328
+Davidson #8: -2099.6551495670
+END OF diagonalize sparse hamiltonian [0.1/4.0]GB [0.050/0.214/1.664]s
+Iteration 6 eps1= 2.00e-03 ndets= 32,083 energy= -2099.65514957
+END OF extra 2.00e-03 << eps_var 2.00e-04 << variation [0.1/4.0]GB [0.001/0.214/1.665]s
+
+BEG OF extra 1.00e-03 << eps_var 2.00e-04 << variation [0.1/4.0]GB [0.000/0.000/1.665]s
+20% 40% 60% 80% 100% 
+Number of dets / new dets: 81,274 / 49,191
+END OF get next det list [0.1/4.0]GB [0.445/0.445/2.110]s
+END OF update unique ab [0.1/4.0]GB [0.040/0.485/2.150]s
+END OF create abm1 [0.1/4.0]GB [0.079/0.563/2.227]s
+Outer size of a/b singles: 17,600 / 0
+Full size of absingles: 463,232
+END OF create absingles [0.1/4.0]GB [0.076/0.638/2.303]s
+10% 20% 30% 40% 50% 60% 70% 80% 90% 100% 
+Number of nonzero elems: 13,178,658
+END OF generate sparse hamiltonian [0.2/4.0]GB [0.326/0.963/2.628]s
+Davidson #0: -2099.6551495670
+Davidson #1: -2099.6956778315
+Davidson #2: -2099.7011370947
+Davidson #3: -2099.7025685100
+Davidson #4: -2099.7031198327
+Davidson #5: -2099.7033408043
+Davidson #6: -2099.7035969099
+Davidson #7: -2099.7038120223
+Davidson #8: -2099.7039832539
+END OF diagonalize sparse hamiltonian [0.2/4.0]GB [0.099/1.062/2.726]s
+Iteration 7 eps1= 1.00e-03 ndets= 81,274 energy= -2099.70398325
+END OF extra 1.00e-03 << eps_var 2.00e-04 << variation [0.2/4.0]GB [0.001/1.062/2.727]s
+
+BEG OF extra 1.00e-03 << eps_var 2.00e-04 << variation [0.2/4.0]GB [0.000/0.000/2.727]s
+20% 40% 60% 80% 100% 
+Number of dets / new dets: 92,145 / 10,871
+END OF get next det list [0.2/4.0]GB [0.778/0.778/3.505]s
+END OF update unique ab [0.2/4.0]GB [0.022/0.800/3.527]s
+END OF create abm1 [0.2/4.0]GB [0.029/0.828/3.555]s
+Outer size of a/b singles: 19,963 / 0
+Full size of absingles: 378,780
+END OF create absingles [0.2/4.0]GB [0.037/0.864/3.591]s
+10% 20% 30% 40% 50% 60% 70% 80% 90% 100% 
+Number of nonzero elems: 14,427,399
+END OF generate sparse hamiltonian [0.2/4.0]GB [0.140/1.004/3.731]s
+Davidson #0: -2099.7039832539
+Davidson #1: -2099.7102031664
+Davidson #2: -2099.7106291770
+Davidson #3: -2099.7107761314
+Davidson #4: -2099.7108611172
+Davidson #5: -2099.7108986887
+Davidson #6: -2099.7109449119
+Davidson #7: -2099.7109871548
+Davidson #8: -2099.7110359273
+END OF diagonalize sparse hamiltonian [0.2/4.0]GB [0.109/1.112/3.839]s
+Iteration 8 eps1= 1.00e-03 ndets= 92,145 energy= -2099.71103593
+END OF extra 1.00e-03 << eps_var 2.00e-04 << variation [0.2/4.0]GB [0.001/1.113/3.840]s
+
+BEG OF extra 1.00e-03 << eps_var 2.00e-04 << variation [0.2/4.0]GB [0.000/0.000/3.840]s
+20% 40% 60% 80% 100% 
+Number of dets / new dets: 96,384 / 4,239
+END OF get next det list [0.2/4.0]GB [0.665/0.665/4.505]s
+END OF update unique ab [0.2/4.0]GB [0.015/0.679/4.519]s
+END OF create abm1 [0.2/4.0]GB [0.017/0.696/4.536]s
+Outer size of a/b singles: 21,137 / 0
+Full size of absingles: 303,066
+END OF create absingles [0.2/4.0]GB [0.025/0.721/4.561]s
+10% 20% 30% 40% 50% 60% 70% 80% 90% 100% 
+Number of nonzero elems: 14,969,872
+END OF generate sparse hamiltonian [0.2/4.1]GB [0.085/0.806/4.645]s
+Davidson #0: -2099.7110359273
+Davidson #1: -2099.7131439346
+Davidson #2: -2099.7132472731
+Davidson #3: -2099.7132818320
+Davidson #4: -2099.7133008556
+Davidson #5: -2099.7133098107
+Davidson #6: -2099.7133217058
+Davidson #7: -2099.7133361306
+Davidson #8: -2099.7133536665
+END OF diagonalize sparse hamiltonian [0.2/4.1]GB [0.115/0.920/4.760]s
+Iteration 9 eps1= 1.00e-03 ndets= 96,384 energy= -2099.71335367
+END OF extra 1.00e-03 << eps_var 2.00e-04 << variation [0.2/4.1]GB [0.001/0.920/4.760]s
+
+BEG OF extra 1.00e-03 << eps_var 2.00e-04 << variation [0.2/4.1]GB [0.000/0.000/4.760]s
+20% 40% 60% 80% 100% 
+Number of dets / new dets: 98,038 / 1,654
+END OF get next det list [0.2/4.1]GB [0.441/0.441/5.201]s
+END OF update unique ab [0.2/4.1]GB [0.007/0.447/5.207]s
+END OF create abm1 [0.2/4.1]GB [0.010/0.456/5.216]s
+Outer size of a/b singles: 21,681 / 0
+Full size of absingles: 170,500
+END OF create absingles [0.2/4.1]GB [0.013/0.470/5.229]s
+10% 20% 30% 40% 50% 60% 70% 80% 90% 100% 
+Number of nonzero elems: 15,193,794
+END OF generate sparse hamiltonian [0.2/4.1]GB [0.042/0.512/5.272]s
+Davidson #0: -2099.7133536665
+Davidson #1: -2099.7141054776
+Davidson #2: -2099.7141332649
+Davidson #3: -2099.7141446458
+Davidson #4: -2099.7141503450
+Davidson #5: -2099.7141531638
+Davidson #6: -2099.7141574553
+Davidson #7: -2099.7141631763
+Davidson #8: -2099.7141705319
+END OF diagonalize sparse hamiltonian [0.2/4.1]GB [0.113/0.624/5.384]s
+Iteration 10 eps1= 1.00e-03 ndets= 98,038 energy= -2099.71417053
+END OF extra 1.00e-03 << eps_var 2.00e-04 << variation [0.2/4.1]GB [0.001/0.625/5.385]s
+
+BEG OF extra 1.00e-03 << eps_var 2.00e-04 << variation [0.2/4.1]GB [0.000/0.000/5.385]s
+20% 40% 60% 80% 100% 
+Number of dets / new dets: 98,975 / 937
+END OF get next det list [0.2/4.1]GB [0.326/0.326/5.711]s
+END OF update unique ab [0.2/4.1]GB [0.004/0.330/5.715]s
+END OF create abm1 [0.2/4.1]GB [0.006/0.336/5.720]s
+Outer size of a/b singles: 22,033 / 0
+Full size of absingles: 123,002
+END OF create absingles [0.2/4.1]GB [0.010/0.346/5.731]s
+10% 20% 30% 40% 50% 60% 70% 80% 90% 100% 
+Number of nonzero elems: 15,345,173
+END OF generate sparse hamiltonian [0.2/4.1]GB [0.032/0.377/5.762]s
+Davidson #0: -2099.7141705319
+Davidson #1: -2099.7145993920
+Davidson #2: -2099.7146117504
+Davidson #3: -2099.7146171543
+Davidson #4: -2099.7146190203
+Davidson #5: -2099.7146198660
+Davidson #6: -2099.7146214153
+Davidson #7: -2099.7146236019
+Davidson #8: -2099.7146260955
+END OF diagonalize sparse hamiltonian [0.2/4.1]GB [0.115/0.491/5.876]s
+Iteration 11 eps1= 1.00e-03 ndets= 98,975 energy= -2099.71462610
+END OF extra 1.00e-03 << eps_var 2.00e-04 << variation [0.2/4.1]GB [0.001/0.492/5.876]s
+
+BEG OF extra 1.00e-03 << eps_var 2.00e-04 << variation [0.2/4.1]GB [0.000/0.000/5.877]s
+20% 40% 60% 80% 100% 
+Number of dets / new dets: 99,335 / 360
+END OF get next det list [0.2/4.1]GB [0.196/0.196/6.072]s
+END OF update unique ab [0.2/4.1]GB [0.002/0.197/6.074]s
+END OF create abm1 [0.2/4.1]GB [0.003/0.200/6.076]s
+Outer size of a/b singles: 22,175 / 0
+Full size of absingles: 48,682
+END OF create absingles [0.2/4.1]GB [0.006/0.206/6.082]s
+10% 20% 30% 40% 50% 60% 70% 80% 90% 100% 
+Number of nonzero elems: 15,385,033
+END OF generate sparse hamiltonian [0.2/4.1]GB [0.014/0.219/6.096]s
+Davidson #0: -2099.7146260955
+Davidson #1: -2099.7147772752
+Davidson #2: -2099.7147813367
+Davidson #3: -2099.7147827797
+Davidson #4: -2099.7147831676
+Davidson #5: -2099.7147833451
+END OF diagonalize sparse hamiltonian [0.2/4.1]GB [0.077/0.296/6.172]s
+Iteration 12 eps1= 1.00e-03 ndets= 99,335 energy= -2099.71478335
+END OF extra 1.00e-03 << eps_var 2.00e-04 << variation [0.2/4.1]GB [0.001/0.296/6.172]s
+
+BEG OF extra 1.00e-03 << eps_var 2.00e-04 << variation [0.2/4.1]GB [0.000/0.000/6.172]s
+20% 40% 60% 80% 100% 
+Number of dets / new dets: 99,513 / 178
+END OF get next det list [0.2/4.1]GB [0.073/0.073/6.245]s
+END OF update unique ab [0.2/4.1]GB [0.002/0.074/6.246]s
+END OF create abm1 [0.2/4.1]GB [0.002/0.075/6.247]s
+Outer size of a/b singles: 22,235 / 0
+Full size of absingles: 32,236
+END OF create absingles [0.2/4.1]GB [0.005/0.080/6.252]s
+10% 20% 30% 40% 50% 60% 70% 80% 90% 100% 
+Number of nonzero elems: 15,440,397
+END OF generate sparse hamiltonian [0.2/4.1]GB [0.018/0.098/6.270]s
+Davidson #0: -2099.7147833451
+Davidson #1: -2099.7148431693
+Davidson #2: -2099.7148441219
+Davidson #3: -2099.7148448415
+Davidson #4: -2099.7148451206
+Davidson #5: -2099.7148452878
+END OF diagonalize sparse hamiltonian [0.2/4.1]GB [0.077/0.175/6.347]s
+Iteration 13 eps1= 1.00e-03 ndets= 99,513 energy= -2099.71484529
+END OF extra 1.00e-03 << eps_var 2.00e-04 << variation [0.2/4.1]GB [0.001/0.175/6.347]s
+
+BEG OF extra 5.00e-04 << eps_var 2.00e-04 << variation [0.2/4.1]GB [0.000/0.000/6.347]s
+20% 40% 60% 80% 100% 
+Number of dets / new dets: 271,846 / 172,333
+END OF get next det list [0.3/4.1]GB [1.438/1.438/7.785]s
+END OF update unique ab [0.3/4.1]GB [0.154/1.591/7.938]s
+END OF create abm1 [0.3/4.1]GB [0.324/1.913/8.261]s
+Outer size of a/b singles: 49,096 / 0
+Full size of absingles: 1,651,500
+END OF create absingles [0.3/4.1]GB [0.284/2.195/8.542]s
+10% 20% 30% 40% 50% 60% 70% 80% 90% 100% 
+Number of nonzero elems: 49,118,612
+END OF generate sparse hamiltonian [0.5/4.3]GB [1.726/3.917/10.264]s
+Davidson #0: -2099.7148452878
+Davidson #1: -2099.7506010980
+Davidson #2: -2099.7535404750
+Davidson #3: -2099.7542723756
+Davidson #4: -2099.7546486399
+Davidson #5: -2099.7548159861
+Davidson #6: -2099.7549824206
+Davidson #7: -2099.7551607677
+Davidson #8: -2099.7553063006
+END OF diagonalize sparse hamiltonian [0.5/4.3]GB [0.338/4.254/10.601]s
+Iteration 14 eps1= 5.00e-04 ndets= 271,846 energy= -2099.75530630
+END OF extra 5.00e-04 << eps_var 2.00e-04 << variation [0.5/4.3]GB [0.001/4.254/10.601]s
+
+BEG OF extra 5.00e-04 << eps_var 2.00e-04 << variation [0.5/4.3]GB [0.000/0.000/10.601]s
+20% 40% 60% 80% 100% 
+Number of dets / new dets: 303,595 / 31,749
+END OF get next det list [0.5/4.3]GB [2.838/2.838/13.439]s
+END OF update unique ab [0.5/4.3]GB [0.074/2.911/13.512]s
+END OF create abm1 [0.5/4.3]GB [0.113/3.023/13.624]s
+Outer size of a/b singles: 55,090 / 0
+Full size of absingles: 1,463,372
+END OF create absingles [0.5/4.3]GB [0.124/3.146/13.747]s
+10% 20% 30% 40% 50% 60% 70% 80% 90% 100% 
+Number of nonzero elems: 54,008,501
+END OF generate sparse hamiltonian [0.5/4.4]GB [0.788/3.932/14.533]s
+Davidson #0: -2099.7553063006
+Davidson #1: -2099.7596827892
+Davidson #2: -2099.7599153926
+Davidson #3: -2099.7600199925
+Davidson #4: -2099.7600685372
+Davidson #5: -2099.7600895536
+Davidson #6: -2099.7601127974
+Davidson #7: -2099.7601349295
+Davidson #8: -2099.7601574545
+END OF diagonalize sparse hamiltonian [0.5/4.4]GB [0.376/4.307/14.909]s
+Iteration 15 eps1= 5.00e-04 ndets= 303,595 energy= -2099.76015745
+END OF extra 5.00e-04 << eps_var 2.00e-04 << variation [0.5/4.4]GB [0.001/4.308/14.909]s
+
+BEG OF extra 5.00e-04 << eps_var 2.00e-04 << variation [0.5/4.4]GB [0.000/0.000/14.909]s
+20% 40% 60% 80% 100% 
+Number of dets / new dets: 312,765 / 9,170
+END OF get next det list [0.5/4.4]GB [2.354/2.354/17.263]s
+END OF update unique ab [0.5/4.4]GB [0.029/2.382/17.291]s
+END OF create abm1 [0.5/4.4]GB [0.040/2.421/17.330]s
+Outer size of a/b singles: 57,290 / 0
+Full size of absingles: 969,984
+END OF create absingles [0.5/4.4]GB [0.063/2.483/17.392]s
+10% 20% 30% 40% 50% 60% 70% 80% 90% 100% 
+Number of nonzero elems: 55,507,411
+END OF generate sparse hamiltonian [0.5/4.4]GB [0.345/2.827/17.736]s
+Davidson #0: -2099.7601574545
+Davidson #1: -2099.7613006278
+Davidson #2: -2099.7613644671
+Davidson #3: -2099.7613858735
+Davidson #4: -2099.7613977781
+Davidson #5: -2099.7614024132
+Davidson #6: -2099.7614087431
+Davidson #7: -2099.7614156107
+Davidson #8: -2099.7614230618
+END OF diagonalize sparse hamiltonian [0.6/4.4]GB [0.384/3.210/18.119]s
+Iteration 16 eps1= 5.00e-04 ndets= 312,765 energy= -2099.76142306
+END OF extra 5.00e-04 << eps_var 2.00e-04 << variation [0.6/4.4]GB [0.001/3.210/18.119]s
+
+BEG OF extra 5.00e-04 << eps_var 2.00e-04 << variation [0.6/4.4]GB [0.000/0.000/18.119]s
+20% 40% 60% 80% 100% 
+Number of dets / new dets: 315,984 / 3,219
+END OF get next det list [0.6/4.4]GB [1.372/1.372/19.491]s
+END OF update unique ab [0.6/4.4]GB [0.014/1.385/19.504]s
+END OF create abm1 [0.6/4.4]GB [0.018/1.402/19.521]s
+Outer size of a/b singles: 58,530 / 0
+Full size of absingles: 501,094
+END OF create absingles [0.6/4.4]GB [0.036/1.438/19.557]s
+10% 20% 30% 40% 50% 60% 70% 80% 90% 100% 
+Number of nonzero elems: 56,010,696
+END OF generate sparse hamiltonian [0.6/4.4]GB [0.157/1.595/19.714]s
+Davidson #0: -2099.7614230618
+Davidson #1: -2099.7618518933
+Davidson #2: -2099.7618664714
+Davidson #3: -2099.7618720314
+Davidson #4: -2099.7618757477
+Davidson #5: -2099.7618772387
+Davidson #6: -2099.7618792692
+Davidson #7: -2099.7618819393
+Davidson #8: -2099.7618856226
+END OF diagonalize sparse hamiltonian [0.6/4.4]GB [0.387/1.981/20.100]s
+Iteration 17 eps1= 5.00e-04 ndets= 315,984 energy= -2099.76188562
+END OF extra 5.00e-04 << eps_var 2.00e-04 << variation [0.6/4.4]GB [0.001/1.982/20.101]s
+
+BEG OF extra 5.00e-04 << eps_var 2.00e-04 << variation [0.6/4.4]GB [0.000/0.000/20.101]s
+20% 40% 60% 80% 100% 
+Number of dets / new dets: 318,113 / 2,129
+END OF get next det list [0.6/4.4]GB [0.837/0.837/20.938]s
+END OF update unique ab [0.6/4.4]GB [0.014/0.850/20.951]s
+END OF create abm1 [0.6/4.4]GB [0.014/0.863/20.964]s
+Outer size of a/b singles: 59,319 / 0
+Full size of absingles: 404,388
+END OF create absingles [0.6/4.4]GB [0.031/0.894/20.995]s
+10% 20% 30% 40% 50% 60% 70% 80% 90% 100% 
+Number of nonzero elems: 56,357,971
+END OF generate sparse hamiltonian [0.6/4.4]GB [0.142/1.035/21.136]s
+Davidson #0: -2099.7618856226
+Davidson #1: -2099.7621491719
+Davidson #2: -2099.7621570389
+Davidson #3: -2099.7621606778
+Davidson #4: -2099.7621620825
+Davidson #5: -2099.7621626850
+Davidson #6: -2099.7621637485
+Davidson #7: -2099.7621651650
+Davidson #8: -2099.7621671327
+END OF diagonalize sparse hamiltonian [0.6/4.4]GB [0.380/1.415/21.515]s
+Iteration 18 eps1= 5.00e-04 ndets= 318,113 energy= -2099.76216713
+END OF extra 5.00e-04 << eps_var 2.00e-04 << variation [0.6/4.4]GB [0.001/1.415/21.516]s
+
+BEG OF extra 5.00e-04 << eps_var 2.00e-04 << variation [0.6/4.4]GB [0.000/0.000/21.516]s
+20% 40% 60% 80% 100% 
+Number of dets / new dets: 319,672 / 1,559
+END OF get next det list [0.6/4.4]GB [0.638/0.638/22.154]s
+END OF update unique ab [0.6/4.4]GB [0.008/0.646/22.161]s
+END OF create abm1 [0.6/4.4]GB [0.011/0.657/22.172]s
+Outer size of a/b singles: 59,915 / 0
+Full size of absingles: 301,886
+END OF create absingles [0.6/4.4]GB [0.026/0.682/22.198]s
+10% 20% 30% 40% 50% 60% 70% 80% 90% 100% 
+Number of nonzero elems: 56,610,114
+END OF generate sparse hamiltonian [0.6/4.4]GB [0.127/0.809/22.324]s
+Davidson #0: -2099.7621671327
+Davidson #1: -2099.7623575645
+Davidson #2: -2099.7623619645
+Davidson #3: -2099.7623639253
+Davidson #4: -2099.7623646473
+Davidson #5: -2099.7623649200
+Davidson #6: -2099.7623653196
+Davidson #7: -2099.7623659407
+Davidson #8: -2099.7623667826
+END OF diagonalize sparse hamiltonian [0.6/4.4]GB [0.397/1.205/22.721]s
+Iteration 19 eps1= 5.00e-04 ndets= 319,672 energy= -2099.76236678
+END OF extra 5.00e-04 << eps_var 2.00e-04 << variation [0.6/4.4]GB [0.001/1.205/22.721]s
+
+BEG OF main << eps_var 2.00e-04 << variation [0.6/4.4]GB [0.000/0.000/22.721]s
+
+BEG OF #1 << main << eps_var 2.00e-04 << variation [0.6/4.4]GB [0.001/0.000/22.722]s
+20% 40% 60% 80% 100% 
+Number of dets / new dets: 1,230,598 / 910,926
+END OF get next det list [0.7/4.6]GB [4.944/4.944/27.665]s
+END OF update unique ab [0.7/4.6]GB [1.012/5.956/28.677]s
+END OF create abm1 [0.9/4.8]GB [1.764/7.717/30.438]s
+Outer size of a/b singles: 175,207 / 0
+Full size of absingles: 7,737,780
+END OF create absingles [1.0/4.8]GB [1.360/9.073/31.795]s
+10% 20% 30% 40% 50% 60% 70% 80% 90% 100% 
+Number of nonzero elems: 275,863,520
+END OF generate sparse hamiltonian [2.2/6.1]GB [18.212/27.280/50.002]s
+Davidson #0: -2099.7623667826
+Davidson #1: -2099.8000325010
+Davidson #2: -2099.8032115492
+Davidson #3: -2099.8039185528
+Davidson #4: -2099.8042662997
+Davidson #5: -2099.8044057452
+Davidson #6: -2099.8045617853
+Davidson #7: -2099.8047273217
+Davidson #8: -2099.8048315451
+END OF diagonalize sparse hamiltonian [2.3/6.1]GB [1.871/29.151/51.873]s
+Iteration 20 eps1= 2.00e-04 ndets= 1,230,598 energy= -2099.80483155
+END OF #1 << main << eps_var 2.00e-04 << variation [2.3/6.1]GB [0.001/29.151/51.873]s
+
+BEG OF #2 << main << eps_var 2.00e-04 << variation [2.3/6.1]GB [0.003/0.000/51.875]s
+20% 40% 60% 80% 100% 
+Number of dets / new dets: 1,369,786 / 139,188
+END OF get next det list [2.2/6.1]GB [14.239/14.239/66.114]s
+END OF update unique ab [2.2/6.1]GB [0.314/14.552/66.427]s
+END OF create abm1 [2.2/6.1]GB [0.597/15.147/67.022]s
+Outer size of a/b singles: 195,761 / 0
+Full size of absingles: 6,737,308
+END OF create absingles [2.2/6.1]GB [0.563/15.707/67.582]s
+10% 20% 30% 40% 50% 60% 70% 80% 90% 100% 
+Number of nonzero elems: 305,161,986
+END OF generate sparse hamiltonian [2.4/6.2]GB [8.510/24.213/76.088]s
+Davidson #0: -2099.8048315451
+Davidson #1: -2099.8078177575
+Davidson #2: -2099.8080603790
+Davidson #3: -2099.8081389127
+Davidson #4: -2099.8081823306
+Davidson #5: -2099.8082028302
+Davidson #6: -2099.8082273277
+Davidson #7: -2099.8082541669
+Davidson #8: -2099.8082894182
+END OF diagonalize sparse hamiltonian [2.5/6.3]GB [2.065/26.277/78.152]s
+Iteration 21 eps1= 2.00e-04 ndets= 1,369,786 energy= -2099.80828942
+END OF #2 << main << eps_var 2.00e-04 << variation [2.5/6.3]GB [0.001/26.277/78.152]s
+
+BEG OF #3 << main << eps_var 2.00e-04 << variation [2.5/6.3]GB [0.005/0.000/78.157]s
+20% 40% 60% 80% 100% 
+Number of dets / new dets: 1,411,710 / 41,924
+END OF get next det list [2.5/6.3]GB [10.675/10.675/88.832]s
+END OF update unique ab [2.5/6.3]GB [0.128/10.803/88.960]s
+END OF create abm1 [2.5/6.3]GB [0.252/11.053/89.209]s
+Outer size of a/b singles: 205,054 / 0
+Full size of absingles: 4,858,678
+END OF create absingles [2.5/6.3]GB [0.316/11.366/89.523]s
+10% 20% 30% 40% 50% 60% 70% 80% 90% 100% 
+Number of nonzero elems: 314,558,724
+END OF generate sparse hamiltonian [2.5/6.3]GB [3.481/14.842/92.999]s
+Davidson #0: -2099.8082894182
+Davidson #1: -2099.8091076187
+Davidson #2: -2099.8091438803
+Davidson #3: -2099.8091598718
+Davidson #4: -2099.8091689441
+Davidson #5: -2099.8091731471
+Davidson #6: -2099.8091796044
+Davidson #7: -2099.8091876938
+Davidson #8: -2099.8091981908
+END OF diagonalize sparse hamiltonian [2.5/6.3]GB [2.123/16.965/95.121]s
+Iteration 22 eps1= 2.00e-04 ndets= 1,411,710 energy= -2099.80919819
+END OF #3 << main << eps_var 2.00e-04 << variation [2.5/6.3]GB [0.001/16.965/95.122]s
+
+BEG OF #4 << main << eps_var 2.00e-04 << variation [2.5/6.3]GB [0.000/0.000/95.122]s
+20% 40% 60% 80% 100% 
+Number of dets / new dets: 1,430,573 / 18,863
+END OF get next det list [2.5/6.4]GB [6.026/6.026/101.148]s
+END OF update unique ab [2.5/6.4]GB [0.068/6.093/101.215]s
+END OF create abm1 [2.5/6.4]GB [0.114/6.206/101.327]s
+Outer size of a/b singles: 210,536 / 0
+Full size of absingles: 3,236,562
+END OF create absingles [2.5/6.4]GB [0.212/6.416/101.538]s
+10% 20% 30% 40% 50% 60% 70% 80% 90% 100% 
+Number of nonzero elems: 318,904,815
+END OF generate sparse hamiltonian [2.5/6.4]GB [2.105/8.516/103.638]s
+Davidson #0: -2099.8091981908
+Davidson #1: -2099.8095385360
+Davidson #2: -2099.8095532625
+Davidson #3: -2099.8095584003
+Davidson #4: -2099.8095612468
+Davidson #5: -2099.8095625602
+Davidson #6: -2099.8095647039
+Davidson #7: -2099.8095683979
+Davidson #8: -2099.8095733826
+END OF diagonalize sparse hamiltonian [2.6/6.4]GB [2.126/10.641/105.763]s
+Iteration 23 eps1= 2.00e-04 ndets= 1,430,573 energy= -2099.80957338
+END OF #4 << main << eps_var 2.00e-04 << variation [2.6/6.4]GB [0.001/10.642/105.763]s
+
+BEG OF #5 << main << eps_var 2.00e-04 << variation [2.6/6.4]GB [0.000/0.000/105.764]s
+20% 40% 60% 80% 100% 
+Number of dets / new dets: 1,441,067 / 10,494
+END OF get next det list [2.6/6.4]GB [4.472/4.472/110.235]s
+END OF update unique ab [2.6/6.4]GB [0.041/4.512/110.276]s
+END OF create abm1 [2.6/6.4]GB [0.070/4.581/110.344]s
+Outer size of a/b singles: 213,864 / 0
+Full size of absingles: 2,218,190
+END OF create absingles [2.6/6.4]GB [0.149/4.729/110.492]s
+10% 20% 30% 40% 50% 60% 70% 80% 90% 100% 
+Number of nonzero elems: 321,366,245
+END OF generate sparse hamiltonian [2.6/6.4]GB [1.237/5.961/111.725]s
+Davidson #0: -2099.8095733827
+Davidson #1: -2099.8097674778
+Davidson #2: -2099.8097755833
+Davidson #3: -2099.8097781121
+Davidson #4: -2099.8097791384
+Davidson #5: -2099.8097795946
+Davidson #6: -2099.8097803673
+Davidson #7: -2099.8097819001
+Davidson #8: -2099.8097840148
+END OF diagonalize sparse hamiltonian [2.6/6.4]GB [2.120/8.080/113.844]s
+Iteration 24 eps1= 2.00e-04 ndets= 1,441,067 energy= -2099.80978401
+END OF #5 << main << eps_var 2.00e-04 << variation [2.6/6.4]GB [0.001/8.081/113.844]s
+
+BEG OF #6 << main << eps_var 2.00e-04 << variation [2.6/6.4]GB [0.000/0.000/113.844]s
+20% 40% 60% 80% 100% 
+Number of dets / new dets: 1,447,888 / 6,821
+END OF get next det list [2.5/6.4]GB [3.075/3.075/116.919]s
+END OF update unique ab [2.5/6.4]GB [0.034/3.109/116.953]s
+END OF create abm1 [2.5/6.4]GB [0.044/3.151/116.995]s
+Outer size of a/b singles: 215,855 / 0
+Full size of absingles: 1,703,850
+END OF create absingles [2.5/6.4]GB [0.118/3.268/117.112]s
+10% 20% 30% 40% 50% 60% 70% 80% 90% 100% 
+Number of nonzero elems: 322,979,472
+END OF generate sparse hamiltonian [2.5/6.4]GB [1.208/4.473/118.317]s
+Davidson #0: -2099.8097840147
+Davidson #1: -2099.8099183778
+Davidson #2: -2099.8099224296
+Davidson #3: -2099.8099240170
+Davidson #4: -2099.8099245577
+Davidson #5: -2099.8099247638
+Davidson #6: -2099.8099250440
+Davidson #7: -2099.8099254689
+Davidson #8: -2099.8099261356
+END OF diagonalize sparse hamiltonian [2.6/6.4]GB [2.125/6.598/120.442]s
+Iteration 25 eps1= 2.00e-04 ndets= 1,447,888 energy= -2099.80992614
+END OF #6 << main << eps_var 2.00e-04 << variation [2.6/6.4]GB [0.001/6.598/120.442]s
+
+BEG OF #7 << main << eps_var 2.00e-04 << variation [2.6/6.4]GB [0.000/0.000/120.443]s
+20% 40% 60% 80% 100% 
+Number of dets / new dets: 1,450,023 / 2,135
+END OF get next det list [2.5/6.4]GB [1.776/1.776/122.218]s
+END OF update unique ab [2.5/6.4]GB [0.022/1.797/122.239]s
+END OF create abm1 [2.5/6.4]GB [0.019/1.815/122.258]s
+Outer size of a/b singles: 216,510 / 0
+Full size of absingles: 696,198
+END OF create absingles [2.5/6.4]GB [0.070/1.885/122.327]s
+10% 20% 30% 40% 50% 60% 70% 80% 90% 100% 
+Number of nonzero elems: 323,463,879
+END OF generate sparse hamiltonian [2.5/6.4]GB [0.592/2.475/122.917]s
+Davidson #0: -2099.8099261356
+Davidson #1: -2099.8099616705
+Davidson #2: -2099.8099624564
+Davidson #3: -2099.8099627564
+Davidson #4: -2099.8099628902
+Davidson #5: -2099.8099629491
+Davidson #6: -2099.8099630312
+Davidson #7: -2099.8099631732
+Davidson #8: -2099.8099633783
+END OF diagonalize sparse hamiltonian [2.6/6.4]GB [2.133/4.607/125.050]s
+Iteration 26 eps1= 2.00e-04 ndets= 1,450,023 energy= -2099.80996338
+END OF #7 << main << eps_var 2.00e-04 << variation [2.6/6.4]GB [0.001/4.608/125.050]s
+
+BEG OF #8 << main << eps_var 2.00e-04 << variation [2.6/6.4]GB [0.000/0.000/125.050]s
+20% 40% 60% 80% 100% 
+Number of dets / new dets: 1,451,520 / 1,497
+END OF get next det list [2.5/6.4]GB [1.169/1.169/126.219]s
+END OF update unique ab [2.5/6.4]GB [0.009/1.178/126.228]s
+END OF create abm1 [2.5/6.4]GB [0.019/1.196/126.246]s
+Outer size of a/b singles: 217,002 / 0
+Full size of absingles: 477,028
+END OF create absingles [2.5/6.4]GB [0.061/1.257/126.307]s
+10% 20% 30% 40% 50% 60% 70% 80% 90% 100% 
+Number of nonzero elems: 323,906,050
+END OF generate sparse hamiltonian [2.5/6.4]GB [0.422/1.677/126.727]s
+Davidson #0: -2099.8099633782
+Davidson #1: -2099.8099866061
+Davidson #2: -2099.8099869092
+Davidson #3: -2099.8099870818
+Davidson #4: -2099.8099871343
+Davidson #5: -2099.8099871554
+Davidson #6: -2099.8099871875
+Davidson #7: -2099.8099872296
+Davidson #8: -2099.8099872978
+END OF diagonalize sparse hamiltonian [2.6/6.4]GB [2.156/3.832/128.882]s
+Iteration 27 eps1= 2.00e-04 ndets= 1,451,520 energy= -2099.80998730
+END OF #8 << main << eps_var 2.00e-04 << variation [2.6/6.4]GB [0.001/3.832/128.882]s
+
+BEG OF #9 << main << eps_var 2.00e-04 << variation [2.6/6.4]GB [0.000/0.000/128.882]s
+20% 40% 60% 80% 100% 
+Number of dets / new dets: 1,452,519 / 999
+END OF get next det list [2.5/6.4]GB [0.817/0.817/129.699]s
+END OF update unique ab [2.5/6.4]GB [0.008/0.825/129.707]s
+END OF create abm1 [2.5/6.4]GB [0.011/0.836/129.718]s
+Outer size of a/b singles: 217,326 / 0
+Full size of absingles: 371,418
+END OF create absingles [2.5/6.4]GB [0.049/0.885/129.767]s
+10% 20% 30% 40% 50% 60% 70% 80% 90% 100% 
+Number of nonzero elems: 324,156,915
+END OF generate sparse hamiltonian [2.5/6.4]GB [0.430/1.313/130.195]s
+Davidson #0: -2099.8099872978
+Davidson #1: -2099.8100018474
+Davidson #2: -2099.8100019891
+Davidson #3: -2099.8100020665
+Davidson #4: -2099.8100020876
+Davidson #5: -2099.8100020957
+Davidson #6: -2099.8100021081
+Davidson #7: -2099.8100021233
+Davidson #8: -2099.8100021471
+END OF diagonalize sparse hamiltonian [2.6/6.4]GB [2.163/3.475/132.357]s
+Iteration 28 eps1= 2.00e-04 ndets= 1,452,519 energy= -2099.81000215
+END OF #9 << main << eps_var 2.00e-04 << variation [2.6/6.4]GB [0.001/3.476/132.358]s
+
+BEG OF #10 << main << eps_var 2.00e-04 << variation [2.6/6.4]GB [0.000/0.000/132.358]s
+Davidson #0: -2099.8100021471
+Davidson #1: -2099.8100021561
+Davidson #2: -2099.8100021621
+Davidson #3: -2099.8100021668
+Davidson #4: -2099.8100021694
+Davidson #5: -2099.8100021711
+END OF diagonalize sparse hamiltonian [2.6/6.4]GB [1.451/1.451/133.809]s
+Iteration 29 eps1= 2.00e-04 ndets= 1,452,519 energy= -2099.81000217
+END OF #10 << main << eps_var 2.00e-04 << variation [2.6/6.4]GB [0.001/1.451/133.809]s
+Final iteration 29 eps1= 2.00e-04 ndets= 1,452,519 energy= -2099.81000217
+Effect dets (without time sym): 2,900,811
+----------------------------------------
+Excite Lv       # dets         Sum c^2
+0                    1      0.42676365
+1                  170      0.00180560
+2                58450      0.37718704
+3               275068      0.01193963
+4              1246469      0.13756831
+5               364164      0.00799005
+6               667621      0.02860547
+7               135276      0.00276068
+8               118399      0.00431457
+9                21724      0.00057804
+10               11208      0.00043491
+11                1680      0.00004261
+12                 569      0.00000941
+13                  12      0.00000001
+----------------------------------------
+Orbital                        Sum c^2
+0                           1.99574900
+1                           1.99584282
+2                           1.98958288
+3                           1.98888169
+4                           1.98888169
+5                           1.98725031
+6                           1.98725031
+7                           1.98532687
+8                           1.93177742
+9                           1.80536395
+10                          1.80536395
+11                          1.57082013
+12                          1.57082013
+13                          1.77925926
+14                          0.21124566
+15                          0.02147408
+16                          0.02147408
+17                          0.01214769
+18                          0.18411478
+19                          0.18411478
+20                          0.41373804
+21                          0.41373804
+22                          0.02904195
+23                          0.00398855
+24                          0.00330278
+25                          0.00330278
+26                          0.00704912
+27                          0.00882936
+28                          0.00882936
+29                          0.00408109
+30                          0.00234762
+31                          0.01182295
+32                          0.01182295
+33                          0.00216730
+34                          0.00216730
+35                          0.00406755
+36                          0.00406755
+37                          0.00439697
+38                          0.00439697
+39                          0.00226939
+40                          0.00339567
+41                          0.00206484
+42                          0.00206484
+43                          0.00099598
+44                          0.00099598
+45                          0.00041206
+46                          0.00009974
+47                          0.00000032
+48                          0.00000032
+49                          0.00388172
+Sum orbitals c^2: 28.00000000
+----------------------------------------
+Most important dets:
+Excite Lv         Coef      Det (Reordered orb)
+0           0.65327150      |  0  1  2  3  4  5  6  7  8  9 10 11 12 13 |  0  1  2  3  4  5  6  7  8  9 10 11 12 13 |
+2          -0.23099740      |  0  1  2  3  4  5  6  7  8  9 10 11 13 20 |  0  1  2  3  4  5  6  7  8  9 10 11 13 20 |
+2          -0.23099740      |  0  1  2  3  4  5  6  7  8  9 10 12 13 21 |  0  1  2  3  4  5  6  7  8  9 10 12 13 21 |
+2           0.16670856      |  0  1  2  3  4  5  6  7  8  9 10 11 13 20 |  0  1  2  3  4  5  6  7  8  9 10 12 13 21 |
+2           0.14601854      |  0  1  2  3  4  5  6  7  8  9 10 12 13 20 |  0  1  2  3  4  5  6  7  8  9 10 11 13 21 |
+4           0.12985015      |  0  1  2  3  4  5  6  7  8  9 10 13 20 21 |  0  1  2  3  4  5  6  7  8  9 10 13 20 21 |
+2          -0.11701730      |  0  1  2  3  4  5  6  7  8  9 10 11 12 14 |  0  1  2  3  4  5  6  7  8  9 10 11 12 14 |
+2           0.09829526      |  0  1  2  3  4  5  6  7  8  9 11 12 13 18 |  0  1  2  3  4  5  6  7  8 10 11 12 13 19 |
+2           0.09424598      |  0  1  2  3  4  5  6  7  8  9 10 11 12 14 |  0  1  2  3  4  5  6  7  8  9 11 12 13 18 |
+2          -0.09424598      |  0  1  2  3  4  5  6  7  8  9 10 11 12 14 |  0  1  2  3  4  5  6  7  8 10 11 12 13 19 |
+2          -0.09365717      |  0  1  2  3  4  5  6  7  8  9 11 12 13 18 |  0  1  2  3  4  5  6  7  8  9 11 12 13 18 |
+2          -0.09365717      |  0  1  2  3  4  5  6  7  8 10 11 12 13 19 |  0  1  2  3  4  5  6  7  8 10 11 12 13 19 |
+2           0.08929077      |  0  1  2  3  4  5  6  7  8 10 11 12 13 19 |  0  1  2  3  4  5  6  7  8  9 10 11 13 20 |
+2           0.08929077      |  0  1  2  3  4  5  6  7  8  9 11 12 13 18 |  0  1  2  3  4  5  6  7  8  9 10 12 13 21 |
+2          -0.08894518      |  0  1  2  3  4  5  6  7  8  9 10 11 12 14 |  0  1  2  3  4  5  6  7  8  9 10 12 13 21 |
+2           0.08894518      |  0  1  2  3  4  5  6  7  8  9 10 11 12 14 |  0  1  2  3  4  5  6  7  8  9 10 11 13 20 |
+2           0.08668453      |  0  1  2  3  4  5  6  7  8  9 10 11 13 14 |  0  1  2  3  4  5  6  7  8  9 10 11 12 20 |
+2          -0.08668453      |  0  1  2  3  4  5  6  7  8  9 10 12 13 14 |  0  1  2  3  4  5  6  7  8  9 10 11 12 21 |
+2          -0.08666731      |  0  1  2  3  4  5  6  7  8  9 11 12 13 18 |  0  1  2  3  4  5  6  7  8  9 10 11 13 20 |
+2          -0.08666731      |  0  1  2  3  4  5  6  7  8 10 11 12 13 19 |  0  1  2  3  4  5  6  7  8  9 10 12 13 21 |
+----------------------------------------
+END OF main << eps_var 2.00e-04 << variation [2.6/6.4]GB [0.861/111.948/134.669]s
+Variational results saved to: wf_eps1_2.00e-04.dat
+END OF eps_var 2.00e-04 << variation [2.6/6.4]GB [0.312/134.794/134.981]s
+
+BEG OF eps_var 1.00e-04 << variation [2.6/6.4]GB [0.001/0.000/134.981]s
+Try Loading Wavefunction wf_eps1_1.00e-04.dat
+
+BEG OF main << eps_var 1.00e-04 << variation [2.6/6.4]GB [0.002/0.000/134.983]s
+
+BEG OF #1 << main << eps_var 1.00e-04 << variation [2.6/6.4]GB [0.001/0.000/134.984]s
+20% 40% 60% 80% 100% 
+Number of dets / new dets: 3,902,280 / 2,449,761
+END OF get next det list [2.9/6.7]GB [21.006/21.006/155.990]s
+END OF update unique ab [2.9/6.7]GB [3.565/24.571/159.555]s
+END OF create abm1 [3.4/7.2]GB [5.290/29.856/164.840]s
+Outer size of a/b singles: 478,004 / 0
+Full size of absingles: 25,716,412
+END OF create absingles [3.6/7.5]GB [4.166/34.017/169.001]s
+10% 20% 30% 40% 50% 60% 70% 80% 90% 100% 
+Number of nonzero elems: 1,036,793,232
+END OF generate sparse hamiltonian [7.6/11.5]GB [96.856/130.870/265.854]s
+Davidson #0: -2099.8100021712
+Davidson #1: -2099.8312922217
+Davidson #2: -2099.8325508808
+Davidson #3: -2099.8328175160
+Davidson #4: -2099.8329367261
+Davidson #5: -2099.8329849359
+Davidson #6: -2099.8330351173
+Davidson #7: -2099.8330855028
+Davidson #8: -2099.8331141553
+END OF diagonalize sparse hamiltonian [7.6/11.5]GB [7.833/138.701/273.685]s
+Iteration 30 eps1= 1.00e-04 ndets= 3,902,280 energy= -2099.83311416
+END OF #1 << main << eps_var 1.00e-04 << variation [7.6/11.5]GB [0.001/138.701/273.685]s
+
+BEG OF #2 << main << eps_var 1.00e-04 << variation [7.6/11.5]GB [0.008/0.000/273.693]s
+20% 40% 60% 80% 100% 
+Number of dets / new dets: 4,180,713 / 278,433
+END OF get next det list [7.5/11.3]GB [43.132/43.132/316.825]s
+END OF update unique ab [7.5/11.3]GB [0.791/43.922/317.615]s
+END OF create abm1 [7.5/11.4]GB [1.414/45.332/319.025]s
+Outer size of a/b singles: 510,012 / 0
+Full size of absingles: 18,866,122
+END OF create absingles [7.5/11.4]GB [1.362/46.690/320.384]s
+10% 20% 30% 40% 50% 60% 70% 80% 90% 100% 
+Number of nonzero elems: 1,104,354,641
+END OF generate sparse hamiltonian [7.9/11.7]GB [36.819/83.504/357.198]s
+Davidson #0: -2099.8331141551
+Davidson #1: -2099.8345824518
+Davidson #2: -2099.8346788966
+Davidson #3: -2099.8347109187
+Davidson #4: -2099.8347243266
+Davidson #5: -2099.8347304133
+Davidson #6: -2099.8347397960
+Davidson #7: -2099.8347492552
+Davidson #8: -2099.8347618957
+END OF diagonalize sparse hamiltonian [7.9/11.7]GB [8.159/91.663/365.356]s
+Iteration 31 eps1= 1.00e-04 ndets= 4,180,713 energy= -2099.83476190
+END OF #2 << main << eps_var 1.00e-04 << variation [7.9/11.7]GB [0.001/91.663/365.356]s
+
+BEG OF #3 << main << eps_var 1.00e-04 << variation [7.9/11.7]GB [0.007/0.000/365.363]s
+20% 40% 60% 80% 100% 
+Number of dets / new dets: 4,264,259 / 83,546
+END OF get next det list [8.2/12.1]GB [26.890/26.890/392.253]s
+END OF update unique ab [8.2/12.1]GB [0.294/27.183/392.546]s
+END OF create abm1 [8.2/12.1]GB [0.600/27.779/393.143]s
+Outer size of a/b singles: 523,907 / 0
+Full size of absingles: 12,562,946
+END OF create absingles [8.2/12.1]GB [0.737/28.514/393.877]s
+10% 20% 30% 40% 50% 60% 70% 80% 90% 100% 
+Number of nonzero elems: 1,125,760,745
+END OF generate sparse hamiltonian [8.3/12.1]GB [14.514/43.024/408.387]s
+Davidson #0: -2099.8347618957
+Davidson #1: -2099.8351699800
+Davidson #2: -2099.8351830079
+Davidson #3: -2099.8351881856
+Davidson #4: -2099.8351909472
+Davidson #5: -2099.8351921852
+Davidson #6: -2099.8351941532
+Davidson #7: -2099.8351970885
+Davidson #8: -2099.8352015587
+END OF diagonalize sparse hamiltonian [8.3/12.1]GB [8.677/51.700/417.063]s
+Iteration 32 eps1= 1.00e-04 ndets= 4,264,259 energy= -2099.83520156
+END OF #3 << main << eps_var 1.00e-04 << variation [8.3/12.1]GB [0.001/51.700/417.063]s
+
+BEG OF #4 << main << eps_var 1.00e-04 << variation [8.3/12.1]GB [0.000/0.000/417.063]s
+20% 40% 60% 80% 100% 
+Number of dets / new dets: 4,297,232 / 32,973
+END OF get next det list [8.2/12.0]GB [16.817/16.817/433.881]s
+END OF update unique ab [8.2/12.0]GB [0.172/16.989/434.052]s
+END OF create abm1 [8.2/12.0]GB [0.264/17.250/434.313]s
+Outer size of a/b singles: 531,146 / 0
+Full size of absingles: 8,084,144
+END OF create absingles [8.2/12.0]GB [0.509/17.757/434.820]s
+10% 20% 30% 40% 50% 60% 70% 80% 90% 100% 
+Number of nonzero elems: 1,134,850,512
+END OF generate sparse hamiltonian [8.2/12.0]GB [9.617/27.370/444.433]s
+Davidson #0: -2099.8352015587
+Davidson #1: -2099.8353566932
+Davidson #2: -2099.8353629227
+Davidson #3: -2099.8353646009
+Davidson #4: -2099.8353653792
+Davidson #5: -2099.8353657121
+Davidson #6: -2099.8353661977
+Davidson #7: -2099.8353672584
+Davidson #8: -2099.8353686369
+END OF diagonalize sparse hamiltonian [8.2/12.1]GB [8.387/35.756/452.819]s
+Iteration 33 eps1= 1.00e-04 ndets= 4,297,232 energy= -2099.83536864
+END OF #4 << main << eps_var 1.00e-04 << variation [8.2/12.1]GB [0.001/35.756/452.820]s
+
+BEG OF #5 << main << eps_var 1.00e-04 << variation [8.2/12.1]GB [0.000/0.000/452.820]s
+20% 40% 60% 80% 100% 
+Number of dets / new dets: 4,313,322 / 16,090
+END OF get next det list [8.3/12.2]GB [9.772/9.772/462.591]s
+END OF update unique ab [8.3/12.2]GB [0.089/9.860/462.680]s
+END OF create abm1 [8.3/12.2]GB [0.135/9.994/462.813]s
+Outer size of a/b singles: 534,612 / 0
+Full size of absingles: 5,029,098
+END OF create absingles [8.3/12.2]GB [0.334/10.326/463.145]s
+10% 20% 30% 40% 50% 60% 70% 80% 90% 100% 
+Number of nonzero elems: 1,139,067,220
+END OF generate sparse hamiltonian [8.3/12.1]GB [6.633/16.955/469.774]s
+Davidson #0: -2099.8353686368
+Davidson #1: -2099.8354514799
+Davidson #2: -2099.8354531550
+Davidson #3: -2099.8354538672
+Davidson #4: -2099.8354541264
+Davidson #5: -2099.8354542362
+Davidson #6: -2099.8354544135
+Davidson #7: -2099.8354547158
+Davidson #8: -2099.8354552195
+END OF diagonalize sparse hamiltonian [8.3/12.2]GB [8.493/25.447/478.266]s
+Iteration 34 eps1= 1.00e-04 ndets= 4,313,322 energy= -2099.83545522
+END OF #5 << main << eps_var 1.00e-04 << variation [8.3/12.2]GB [0.001/25.447/478.266]s
+
+BEG OF #6 << main << eps_var 1.00e-04 << variation [8.3/12.2]GB [0.000/0.000/478.266]s
+20% 40% 60% 80% 100% 
+Number of dets / new dets: 4,318,145 / 4,823
+END OF get next det list [8.3/12.2]GB [5.500/5.500/483.766]s
+END OF update unique ab [8.3/12.2]GB [0.043/5.543/483.809]s
+END OF create abm1 [8.3/12.2]GB [0.047/5.589/483.855]s
+Outer size of a/b singles: 535,519 / 0
+Full size of absingles: 2,066,752
+END OF create absingles [8.3/12.2]GB [0.192/5.780/484.047]s
+10% 20% 30% 40% 50% 60% 70% 80% 90% 100% 
+Number of nonzero elems: 1,140,416,311
+END OF generate sparse hamiltonian [8.3/12.2]GB [4.262/10.038/488.304]s
+Davidson #0: -2099.8354552195
+Davidson #1: -2099.8354771967
+Davidson #2: -2099.8354777370
+Davidson #3: -2099.8354779216
+Davidson #4: -2099.8354779950
+Davidson #5: -2099.8354780236
+Davidson #6: -2099.8354780651
+Davidson #7: -2099.8354781418
+Davidson #8: -2099.8354782479
+END OF diagonalize sparse hamiltonian [8.3/12.2]GB [8.554/18.592/496.858]s
+Iteration 35 eps1= 1.00e-04 ndets= 4,318,145 energy= -2099.83547825
+END OF #6 << main << eps_var 1.00e-04 << variation [8.3/12.2]GB [0.001/18.592/496.858]s
+
+BEG OF #7 << main << eps_var 1.00e-04 << variation [8.3/12.2]GB [0.000/0.000/496.858]s
+20% 40% 60% 80% 100% 
+Number of dets / new dets: 4,321,440 / 3,295
+END OF get next det list [8.3/12.2]GB [3.066/3.066/499.924]s
+END OF update unique ab [8.3/12.2]GB [0.035/3.101/499.959]s
+END OF create abm1 [8.3/12.2]GB [0.034/3.134/499.992]s
+Outer size of a/b singles: 536,115 / 0
+Full size of absingles: 1,514,970
+END OF create absingles [8.3/12.2]GB [0.156/3.289/500.148]s
+10% 20% 30% 40% 50% 60% 70% 80% 90% 100% 
+Number of nonzero elems: 1,141,493,682
+END OF generate sparse hamiltonian [8.3/12.2]GB [3.680/6.965/503.823]s
+Davidson #0: -2099.8354782479
+Davidson #1: -2099.8354933863
+Davidson #2: -2099.8354936051
+Davidson #3: -2099.8354937132
+Davidson #4: -2099.8354937417
+Davidson #5: -2099.8354937523
+Davidson #6: -2099.8354937692
+Davidson #7: -2099.8354937910
+Davidson #8: -2099.8354938260
+END OF diagonalize sparse hamiltonian [8.3/12.2]GB [8.459/15.424/512.282]s
+Iteration 36 eps1= 1.00e-04 ndets= 4,321,440 energy= -2099.83549383
+END OF #7 << main << eps_var 1.00e-04 << variation [8.3/12.2]GB [0.001/15.424/512.282]s
+
+BEG OF #8 << main << eps_var 1.00e-04 << variation [8.3/12.2]GB [0.000/0.000/512.282]s
+Davidson #0: -2099.8354938259
+Davidson #1: -2099.8354938410
+Davidson #2: -2099.8354938518
+Davidson #3: -2099.8354938595
+Davidson #4: -2099.8354938636
+Davidson #5: -2099.8354938662
+Davidson #6: -2099.8354938701
+Davidson #7: -2099.8354938749
+Davidson #8: -2099.8354938804
+END OF diagonalize sparse hamiltonian [8.3/12.2]GB [8.361/8.361/520.643]s
+Iteration 37 eps1= 1.00e-04 ndets= 4,321,440 energy= -2099.83549388
+END OF #8 << main << eps_var 1.00e-04 << variation [8.3/12.2]GB [0.001/8.361/520.643]s
+
+BEG OF #9 << main << eps_var 1.00e-04 << variation [8.3/12.2]GB [0.000/0.000/520.643]s
+Davidson #0: -2099.8354938805
+Davidson #1: -2099.8354938845
+Davidson #2: -2099.8354938871
+Davidson #3: -2099.8354938889
+END OF diagonalize sparse hamiltonian [8.3/12.2]GB [3.743/3.743/524.386]s
+Iteration 38 eps1= 1.00e-04 ndets= 4,321,440 energy= -2099.83549389
+END OF #9 << main << eps_var 1.00e-04 << variation [8.3/12.2]GB [0.001/3.743/524.386]s
+Final iteration 38 eps1= 1.00e-04 ndets= 4,321,440 energy= -2099.83549389
+Effect dets (without time sym): 8,635,858
+----------------------------------------
+Excite Lv       # dets         Sum c^2
+0                    1      0.40091750
+1                  180      0.00191121
+2                68397      0.38307499
+3               656900      0.01315815
+4              3342499      0.14904623
+5              1227770      0.00933903
+6              2148200      0.03275540
+7               504098      0.00334774
+8               518620      0.00510660
+9                98764      0.00073031
+10               59852      0.00053808
+11                7612      0.00006170
+12                2867      0.00001296
+13                  98      0.00000012
+----------------------------------------
+Orbital                        Sum c^2
+0                           1.99548859
+1                           1.99557671
+2                           1.98895254
+3                           1.98820880
+4                           1.98820880
+5                           1.98654281
+6                           1.98654281
+7                           1.98452461
+8                           1.91531072
+9                           1.79170697
+10                          1.79170697
+11                          1.54894297
+12                          1.54894297
+13                          1.76531932
+14                          0.22363830
+15                          0.02572513
+16                          0.02572513
+17                          0.01392265
+18                          0.19639816
+19                          0.19639816
+20                          0.43340973
+21                          0.43340973
+22                          0.03761186
+23                          0.00463388
+24                          0.00375927
+25                          0.00375927
+26                          0.00764608
+27                          0.00946122
+28                          0.00946122
+29                          0.00429549
+30                          0.00253074
+31                          0.01282343
+32                          0.01282343
+33                          0.00228820
+34                          0.00228820
+35                          0.00428721
+36                          0.00428721
+37                          0.00487590
+38                          0.00487590
+39                          0.00239938
+40                          0.00379836
+41                          0.00231218
+42                          0.00231218
+43                          0.00121496
+44                          0.00121496
+45                          0.00060451
+46                          0.00015523
+47                          0.00000066
+48                          0.00000066
+49                          0.00407603
+Sum orbitals c^2: 28.00000000
+----------------------------------------
+Most important dets:
+Excite Lv         Coef      Det (Reordered orb)
+0           0.63318046      |  0  1  2  3  4  5  6  7  8  9 10 11 12 13 |  0  1  2  3  4  5  6  7  8  9 10 11 12 13 |
+2          -0.23118608      |  0  1  2  3  4  5  6  7  8  9 10 11 13 20 |  0  1  2  3  4  5  6  7  8  9 10 11 13 20 |
+2          -0.23118608      |  0  1  2  3  4  5  6  7  8  9 10 12 13 21 |  0  1  2  3  4  5  6  7  8  9 10 12 13 21 |
+2           0.15736632      |  0  1  2  3  4  5  6  7  8  9 10 11 13 20 |  0  1  2  3  4  5  6  7  8  9 10 12 13 21 |
+2           0.15581803      |  0  1  2  3  4  5  6  7  8  9 10 12 13 20 |  0  1  2  3  4  5  6  7  8  9 10 11 13 21 |
+4           0.12698826      |  0  1  2  3  4  5  6  7  8  9 10 13 20 21 |  0  1  2  3  4  5  6  7  8  9 10 13 20 21 |
+2          -0.11396975      |  0  1  2  3  4  5  6  7  8  9 10 11 12 14 |  0  1  2  3  4  5  6  7  8  9 10 11 12 14 |
+2           0.09414351      |  0  1  2  3  4  5  6  7  8  9 11 12 13 18 |  0  1  2  3  4  5  6  7  8 10 11 12 13 19 |
+2          -0.09221671      |  0  1  2  3  4  5  6  7  8  9 11 12 13 18 |  0  1  2  3  4  5  6  7  8  9 11 12 13 18 |
+2          -0.09221671      |  0  1  2  3  4  5  6  7  8 10 11 12 13 19 |  0  1  2  3  4  5  6  7  8 10 11 12 13 19 |
+2           0.09160475      |  0  1  2  3  4  5  6  7  8  9 10 11 13 14 |  0  1  2  3  4  5  6  7  8  9 10 11 12 20 |
+2          -0.09160475      |  0  1  2  3  4  5  6  7  8  9 10 12 13 14 |  0  1  2  3  4  5  6  7  8  9 10 11 12 21 |
+2           0.09091461      |  0  1  2  3  4  5  6  7  8  9 10 11 12 14 |  0  1  2  3  4  5  6  7  8  9 11 12 13 18 |
+2          -0.09091461      |  0  1  2  3  4  5  6  7  8  9 10 11 12 14 |  0  1  2  3  4  5  6  7  8 10 11 12 13 19 |
+2           0.08857194      |  0  1  2  3  4  5  6  7  8  9 10 12 13 18 |  0  1  2  3  4  5  6  7  8  9 11 12 13 21 |
+2           0.08857194      |  0  1  2  3  4  5  6  7  8  9 10 11 13 19 |  0  1  2  3  4  5  6  7  8 10 11 12 13 20 |
+2           0.08779285      |  0  1  2  3  4  5  6  7  8  9 11 12 13 18 |  0  1  2  3  4  5  6  7  8  9 10 12 13 21 |
+2           0.08779285      |  0  1  2  3  4  5  6  7  8 10 11 12 13 19 |  0  1  2  3  4  5  6  7  8  9 10 11 13 20 |
+2          -0.08771418      |  0  1  2  3  4  5  6  7  8  9 10 11 12 14 |  0  1  2  3  4  5  6  7  8  9 10 12 13 21 |
+2           0.08771418      |  0  1  2  3  4  5  6  7  8  9 10 11 12 14 |  0  1  2  3  4  5  6  7  8  9 10 11 13 20 |
+----------------------------------------
+END OF main << eps_var 1.00e-04 << variation [8.3/12.1]GB [2.776/392.178/527.162]s
+Variational results saved to: wf_eps1_1.00e-04.dat
+END OF eps_var 1.00e-04 << variation [8.3/12.1]GB [0.925/393.105/528.086]s
+
+BEG OF eps_var 5.00e-05 << variation [8.3/12.1]GB [0.001/0.000/528.086]s
+Try Loading Wavefunction wf_eps1_5.00e-05.dat
+
+BEG OF main << eps_var 5.00e-05 << variation [8.3/12.1]GB [0.002/0.000/528.087]s
+
+BEG OF #1 << main << eps_var 5.00e-05 << variation [8.3/12.1]GB [0.001/0.000/528.088]s
+20% 40% 60% 80% 100% 
+Number of dets / new dets: 11,839,290 / 7,517,850
+END OF get next det list [9.6/13.4]GB [63.530/63.530/591.618]s
+END OF update unique ab [9.8/13.7]GB [10.141/73.670/601.758]s
+END OF create abm1 [10.9/14.7]GB [14.906/88.572/616.659]s
+Outer size of a/b singles: 1,173,166 / 0
+Full size of absingles: 74,586,264
+END OF create absingles [11.6/15.4]GB [12.592/101.159/629.246]s
+10% 20% 30% 40% 50% 60% 70% 80% 90% 100% 
+Number of nonzero elems: 3,731,551,000
+END OF generate sparse hamiltonian [26.0/29.8]GB [512.476/611.801/1139.889]s
+Davidson #0: -2099.8354938890
+Davidson #1: -2099.8528018444
+Davidson #2: -2099.8537686052
+Davidson #3: -2099.8539593452
+Davidson #4: -2099.8540417199
+Davidson #5: -2099.8540757399
+Davidson #6: -2099.8541124100
+Davidson #7: -2099.8541454492
+Davidson #8: -2099.8541637802
+END OF diagonalize sparse hamiltonian [26.0/29.8]GB [33.752/645.552/1173.640]s
+Iteration 39 eps1= 5.00e-05 ndets= 11,839,290 energy= -2099.85416378
+END OF #1 << main << eps_var 5.00e-05 << variation [26.0/29.8]GB [0.001/645.552/1173.640]s
+
+BEG OF #2 << main << eps_var 5.00e-05 << variation [26.0/29.8]GB [0.019/0.000/1173.659]s
+20% 40% 60% 80% 100% 
+Number of dets / new dets: 12,675,560 / 836,270
+END OF get next det list [26.0/29.8]GB [137.405/137.405/1311.064]s
+END OF update unique ab [26.0/29.8]GB [2.493/139.897/1313.555]s
+END OF create abm1 [26.0/29.8]GB [3.710/143.602/1317.260]s
+Outer size of a/b singles: 1,240,616 / 0
+Full size of absingles: 54,383,028
+END OF create absingles [26.1/29.9]GB [3.481/147.079/1320.737]s
+10% 20% 30% 40% 50% 60% 70% 80% 90% 100% 
+Number of nonzero elems: 3,988,800,182
+END OF generate sparse hamiltonian [27.4/31.2]GB [231.685/378.760/1552.418]s
+Davidson #0: -2099.8541637803
+Davidson #1: -2099.8553179597
+Davidson #2: -2099.8553765746
+Davidson #3: -2099.8553986235
+Davidson #4: -2099.8554080796
+Davidson #5: -2099.8554121278
+Davidson #6: -2099.8554187942
+Davidson #7: -2099.8554254442
+Davidson #8: -2099.8554333124
+END OF diagonalize sparse hamiltonian [27.5/31.4]GB [36.773/415.531/1589.190]s
+Iteration 40 eps1= 5.00e-05 ndets= 12,675,560 energy= -2099.85543331
+END OF #2 << main << eps_var 5.00e-05 << variation [27.5/31.4]GB [0.001/415.531/1589.190]s
+
+BEG OF #3 << main << eps_var 5.00e-05 << variation [27.6/31.5]GB [0.050/0.001/1589.240]s
+20% 40% 60% 80% 100% 
+Number of dets / new dets: 12,902,611 / 227,051
+END OF get next det list [27.7/31.6]GB [80.533/80.533/1669.773]s
+END OF update unique ab [27.7/31.6]GB [0.819/81.349/1670.588]s
+END OF create abm1 [27.7/31.6]GB [1.405/82.750/1671.989]s
+Outer size of a/b singles: 1,266,314 / 0
+Full size of absingles: 35,469,690
+END OF create absingles [27.7/31.6]GB [1.743/84.489/1673.728]s
+10% 20% 30% 40% 50% 60% 70% 80% 90% 100% 
+Number of nonzero elems: 4,060,423,551
+END OF generate sparse hamiltonian [27.8/31.7]GB [77.706/162.190/1751.429]s
+Davidson #0: -2099.8554333125
+Davidson #1: -2099.8557178480
+Davidson #2: -2099.8557270998
+Davidson #3: -2099.8557309166
+Davidson #4: -2099.8557328063
+Davidson #5: -2099.8557335619
+Davidson #6: -2099.8557348642
+Davidson #7: -2099.8557367049
+Davidson #8: -2099.8557396548
+END OF diagonalize sparse hamiltonian [27.8/31.7]GB [34.549/196.738/1785.978]s
+Iteration 41 eps1= 5.00e-05 ndets= 12,902,611 energy= -2099.85573965
+END OF #3 << main << eps_var 5.00e-05 << variation [27.8/31.7]GB [0.001/196.738/1785.978]s
+
+BEG OF #4 << main << eps_var 5.00e-05 << variation [27.8/31.7]GB [0.001/0.000/1785.979]s
+20% 40% 60% 80% 100% 
+Number of dets / new dets: 12,981,867 / 79,256
+END OF get next det list [27.8/31.7]GB [45.055/45.055/1831.033]s
+END OF update unique ab [27.8/31.7]GB [0.420/45.474/1831.452]s
+END OF create abm1 [27.8/31.7]GB [0.663/46.133/1832.112]s
+Outer size of a/b singles: 1,279,025 / 0
+Full size of absingles: 21,913,282
+END OF create absingles [27.8/31.7]GB [1.235/47.365/1833.343]s
+10% 20% 30% 40% 50% 60% 70% 80% 90% 100% 
+Number of nonzero elems: 4,086,188,657
+END OF generate sparse hamiltonian [27.9/31.7]GB [46.300/93.660/1879.639]s
+Davidson #0: -2099.8557396549
+Davidson #1: -2099.8558347324
+Davidson #2: -2099.8558391523
+Davidson #3: -2099.8558400641
+Davidson #4: -2099.8558405630
+Davidson #5: -2099.8558407392
+Davidson #6: -2099.8558410160
+Davidson #7: -2099.8558415691
+Davidson #8: -2099.8558422590
+END OF diagonalize sparse hamiltonian [27.9/31.7]GB [35.554/129.214/1915.192]s
+Iteration 42 eps1= 5.00e-05 ndets= 12,981,867 energy= -2099.85584226
+END OF #4 << main << eps_var 5.00e-05 << variation [27.9/31.7]GB [0.001/129.214/1915.192]s
+
+BEG OF #5 << main << eps_var 5.00e-05 << variation [27.9/31.7]GB [0.001/0.000/1915.193]s
+20% 40% 60% 80% 100% 
+Number of dets / new dets: 13,009,707 / 27,840
+END OF get next det list [27.9/31.7]GB [22.081/22.081/1937.274]s
+END OF update unique ab [27.9/31.7]GB [0.221/22.302/1937.495]s
+END OF create abm1 [27.9/31.7]GB [0.274/22.573/1937.766]s
+Outer size of a/b singles: 1,282,974 / 0
+Full size of absingles: 11,052,016
+END OF create absingles [27.9/31.7]GB [0.803/23.375/1938.567]s
+10% 20% 30% 40% 50% 60% 70% 80% 90% 100% 
+Number of nonzero elems: 4,094,744,455
+END OF generate sparse hamiltonian [27.9/31.7]GB [32.847/56.217/1971.410]s
+Davidson #0: -2099.8558422589
+Davidson #1: -2099.8558779658
+Davidson #2: -2099.8558788071
+Davidson #3: -2099.8558790899
+Davidson #4: -2099.8558792031
+Davidson #5: -2099.8558792471
+Davidson #6: -2099.8558793193
+Davidson #7: -2099.8558794506
+Davidson #8: -2099.8558796303
+END OF diagonalize sparse hamiltonian [27.9/31.7]GB [36.166/92.382/2007.575]s
+Iteration 43 eps1= 5.00e-05 ndets= 13,009,707 energy= -2099.85587963
+END OF #5 << main << eps_var 5.00e-05 << variation [27.9/31.7]GB [0.001/92.382/2007.575]s
+
+BEG OF #6 << main << eps_var 5.00e-05 << variation [27.9/31.7]GB [0.001/0.000/2007.576]s
+20% 40% 60% 80% 100% 
+Number of dets / new dets: 13,026,836 / 17,129
+END OF get next det list [27.9/31.7]GB [13.310/13.310/2020.886]s
+END OF update unique ab [27.9/31.7]GB [0.152/13.461/2021.037]s
+END OF create abm1 [27.9/31.7]GB [0.178/13.637/2021.213]s
+Outer size of a/b singles: 1,285,340 / 0
+Full size of absingles: 7,118,968
+END OF create absingles [27.9/31.7]GB [0.588/14.223/2021.799]s
+10% 20% 30% 40% 50% 60% 70% 80% 90% 100% 
+Number of nonzero elems: 4,100,291,922
+END OF generate sparse hamiltonian [27.9/31.7]GB [25.481/39.699/2047.275]s
+Davidson #0: -2099.8558796303
+Davidson #1: -2099.8559006283
+Davidson #2: -2099.8559009261
+Davidson #3: -2099.8559010615
+Davidson #4: -2099.8559011074
+Davidson #5: -2099.8559011236
+Davidson #6: -2099.8559011513
+Davidson #7: -2099.8559011950
+Davidson #8: -2099.8559012592
+END OF diagonalize sparse hamiltonian [27.9/31.7]GB [35.531/75.230/2082.805]s
+Iteration 44 eps1= 5.00e-05 ndets= 13,026,836 energy= -2099.85590126
+END OF #6 << main << eps_var 5.00e-05 << variation [27.9/31.7]GB [0.001/75.230/2082.806]s
+
+BEG OF #7 << main << eps_var 5.00e-05 << variation [27.9/31.7]GB [0.001/0.000/2082.806]s
+20% 40% 60% 80% 100% 
+Number of dets / new dets: 13,033,363 / 6,527
+END OF get next det list [27.9/31.7]GB [7.892/7.892/2090.698]s
+END OF update unique ab [27.9/31.7]GB [0.096/7.987/2090.793]s
+END OF create abm1 [27.9/31.7]GB [0.075/8.061/2090.867]s
+Outer size of a/b singles: 1,286,492 / 0
+Full size of absingles: 3,639,156
+END OF create absingles [27.9/31.7]GB [0.402/8.462/2091.268]s
+10% 20% 30% 40% 50% 60% 70% 80% 90% 100% 
+Number of nonzero elems: 4,102,730,413
+END OF generate sparse hamiltonian [27.9/31.7]GB [18.730/27.187/2109.993]s
+Davidson #0: -2099.8559012592
+Davidson #1: -2099.8559092703
+Davidson #2: -2099.8559094305
+Davidson #3: -2099.8559094948
+Davidson #4: -2099.8559095154
+Davidson #5: -2099.8559095221
+Davidson #6: -2099.8559095307
+Davidson #7: -2099.8559095440
+Davidson #8: -2099.8559095601
+END OF diagonalize sparse hamiltonian [27.9/31.7]GB [35.330/62.515/2145.321]s
+Iteration 45 eps1= 5.00e-05 ndets= 13,033,363 energy= -2099.85590956
+END OF #7 << main << eps_var 5.00e-05 << variation [27.9/31.7]GB [0.001/62.515/2145.321]s
+
+BEG OF #8 << main << eps_var 5.00e-05 << variation [27.9/31.7]GB [0.001/0.000/2145.321]s
+Davidson #0: -2099.8559095602
+Davidson #1: -2099.8559095692
+Davidson #2: -2099.8559095759
+Davidson #3: -2099.8559095809
+Davidson #4: -2099.8559095838
+Davidson #5: -2099.8559095859
+Davidson #6: -2099.8559095888
+Davidson #7: -2099.8559095926
+Davidson #8: -2099.8559095965
+END OF diagonalize sparse hamiltonian [27.9/31.7]GB [35.675/35.675/2180.997]s
+Iteration 46 eps1= 5.00e-05 ndets= 13,033,363 energy= -2099.85590960
+END OF #8 << main << eps_var 5.00e-05 << variation [27.9/31.7]GB [0.001/35.675/2180.997]s
+
+BEG OF #9 << main << eps_var 5.00e-05 << variation [27.9/31.7]GB [0.000/0.000/2180.997]s
+Davidson #0: -2099.8559095963
+Davidson #1: -2099.8559095993
+Davidson #2: -2099.8559096016
+Davidson #3: -2099.8559096031
+END OF diagonalize sparse hamiltonian [27.9/31.7]GB [16.077/16.077/2197.073]s
+Iteration 47 eps1= 5.00e-05 ndets= 13,033,363 energy= -2099.85590960
+END OF #9 << main << eps_var 5.00e-05 << variation [27.9/31.7]GB [0.001/16.077/2197.073]s
+Final iteration 47 eps1= 5.00e-05 ndets= 13,033,363 energy= -2099.85590960
+Effect dets (without time sym): 26,054,770
+----------------------------------------
+Excite Lv       # dets         Sum c^2
+0                    1      0.37875680
+1                  192      0.00190044
+2                76881      0.38810373
+3              1452540      0.01459962
+4              8699043      0.15823595
+5              4466134      0.01088808
+6              6894266      0.03609790
+7              1846816      0.00400267
+8              1870370      0.00577630
+9               414860      0.00090777
+10              268516      0.00062879
+11               49304      0.00008187
+12               14724      0.00001960
+13                 858      0.00000045
+14                 265      0.00000002
+----------------------------------------
+Orbital                        Sum c^2
+0                           1.99525645
+1                           1.99532769
+2                           1.98835364
+3                           1.98758378
+4                           1.98758378
+5                           1.98588847
+6                           1.98588847
+7                           1.98376430
+8                           1.89966634
+9                           1.78178839
+10                          1.78178839
+11                          1.52814927
+12                          1.52814927
+13                          1.75510461
+14                          0.23211300
+15                          0.03003155
+16                          0.03003155
+17                          0.01587755
+18                          0.20475692
+19                          0.20475692
+20                          0.45160027
+21                          0.45160027
+22                          0.04538295
+23                          0.00530937
+24                          0.00421805
+25                          0.00421805
+26                          0.00833069
+27                          0.01013504
+28                          0.01013504
+29                          0.00450074
+30                          0.00271512
+31                          0.01392614
+32                          0.01392614
+33                          0.00240051
+34                          0.00240051
+35                          0.00450432
+36                          0.00450432
+37                          0.00539352
+38                          0.00539352
+39                          0.00251768
+40                          0.00420020
+41                          0.00255981
+42                          0.00255981
+43                          0.00144433
+44                          0.00144433
+45                          0.00084293
+46                          0.00022145
+47                          0.00000097
+48                          0.00000097
+49                          0.00425210
+Sum orbitals c^2: 28.00000000
+----------------------------------------
+Most important dets:
+Excite Lv         Coef      Det (Reordered orb)
+0           0.61543221      |  0  1  2  3  4  5  6  7  8  9 10 11 12 13 |  0  1  2  3  4  5  6  7  8  9 10 11 12 13 |
+2          -0.23271781      |  0  1  2  3  4  5  6  7  8  9 10 11 13 20 |  0  1  2  3  4  5  6  7  8  9 10 11 13 20 |
+2          -0.23271781      |  0  1  2  3  4  5  6  7  8  9 10 12 13 21 |  0  1  2  3  4  5  6  7  8  9 10 12 13 21 |
+2           0.16321145      |  0  1  2  3  4  5  6  7  8  9 10 12 13 20 |  0  1  2  3  4  5  6  7  8  9 10 11 13 21 |
+2           0.15226751      |  0  1  2  3  4  5  6  7  8  9 10 11 13 20 |  0  1  2  3  4  5  6  7  8  9 10 12 13 21 |
+4           0.12628267      |  0  1  2  3  4  5  6  7  8  9 10 13 20 21 |  0  1  2  3  4  5  6  7  8  9 10 13 20 21 |
+2          -0.11195128      |  0  1  2  3  4  5  6  7  8  9 10 11 12 14 |  0  1  2  3  4  5  6  7  8  9 10 11 12 14 |
+2           0.09413645      |  0  1  2  3  4  5  6  7  8  9 10 11 13 14 |  0  1  2  3  4  5  6  7  8  9 10 11 12 20 |
+2          -0.09413645      |  0  1  2  3  4  5  6  7  8  9 10 12 13 14 |  0  1  2  3  4  5  6  7  8  9 10 11 12 21 |
+2           0.09132138      |  0  1  2  3  4  5  6  7  8  9 11 12 13 18 |  0  1  2  3  4  5  6  7  8 10 11 12 13 19 |
+2          -0.09113365      |  0  1  2  3  4  5  6  7  8  9 11 12 13 18 |  0  1  2  3  4  5  6  7  8  9 11 12 13 18 |
+2          -0.09113365      |  0  1  2  3  4  5  6  7  8 10 11 12 13 19 |  0  1  2  3  4  5  6  7  8 10 11 12 13 19 |
+2           0.09110590      |  0  1  2  3  4  5  6  7  8  9 10 11 13 19 |  0  1  2  3  4  5  6  7  8 10 11 12 13 20 |
+2           0.09110590      |  0  1  2  3  4  5  6  7  8  9 10 12 13 18 |  0  1  2  3  4  5  6  7  8  9 11 12 13 21 |
+2          -0.08833683      |  0  1  2  3  4  5  6  7  8  9 10 11 12 14 |  0  1  2  3  4  5  6  7  8 10 11 12 13 19 |
+2           0.08833683      |  0  1  2  3  4  5  6  7  8  9 10 11 12 14 |  0  1  2  3  4  5  6  7  8  9 11 12 13 18 |
+2           0.08625570      |  0  1  2  3  4  5  6  7  8  9 11 12 13 18 |  0  1  2  3  4  5  6  7  8  9 10 12 13 21 |
+2           0.08625570      |  0  1  2  3  4  5  6  7  8 10 11 12 13 19 |  0  1  2  3  4  5  6  7  8  9 10 11 13 20 |
+2          -0.08625019      |  0  1  2  3  4  5  6  7  8  9 10 11 12 14 |  0  1  2  3  4  5  6  7  8  9 10 12 13 21 |
+2           0.08625019      |  0  1  2  3  4  5  6  7  8  9 10 11 12 14 |  0  1  2  3  4  5  6  7  8  9 10 11 13 20 |
+----------------------------------------
+END OF main << eps_var 5.00e-05 << variation [27.8/31.6]GB [8.825/1677.811/2205.898]s
+Variational results saved to: wf_eps1_5.00e-05.dat
+END OF eps_var 5.00e-05 << variation [27.8/31.6]GB [2.812/1680.623/2208.709]s
+END OF variation [24.9/28.7]GB [5.761/2214.283/2214.470]s
+
+BEG OF post variation [24.9/28.7]GB [0.001/0.000/2214.470]s
+END OF post variation [24.9/28.7]GB [0.000/0.000/2214.470]s
+
+BEG OF perturbation [24.9/28.7]GB [0.000/0.000/2214.470]s
+
+BEG OF eps_var 2.00e-04 << perturbation [24.9/28.7]GB [0.000/0.000/2214.470]s
+Try Loading Wavefunction wf_eps1_2.00e-04.dat
+Loaded 1,452,519 dets from: wf_eps1_2.00e-04.dat
+Effect dets (without time sym): 2,900,811
+----------------------------------------
+Excite Lv       # dets         Sum c^2
+0                    1      0.42676365
+1                  170      0.00180560
+2                58450      0.37718704
+3               275068      0.01193963
+4              1246469      0.13756831
+5               364164      0.00799005
+6               667621      0.02860547
+7               135276      0.00276068
+8               118399      0.00431457
+9                21724      0.00057804
+10               11208      0.00043491
+11                1680      0.00004261
+12                 569      0.00000941
+13                  12      0.00000001
+----------------------------------------
+Orbital                        Sum c^2
+0                           1.99574900
+1                           1.99584282
+2                           1.98958288
+3                           1.98888169
+4                           1.98888169
+5                           1.98725031
+6                           1.98725031
+7                           1.98532687
+8                           1.93177742
+9                           1.80536395
+10                          1.80536395
+11                          1.57082013
+12                          1.57082013
+13                          1.77925926
+14                          0.21124566
+15                          0.02147408
+16                          0.02147408
+17                          0.01214769
+18                          0.18411478
+19                          0.18411478
+20                          0.41373804
+21                          0.41373804
+22                          0.02904195
+23                          0.00398855
+24                          0.00330278
+25                          0.00330278
+26                          0.00704912
+27                          0.00882936
+28                          0.00882936
+29                          0.00408109
+30                          0.00234762
+31                          0.01182295
+32                          0.01182295
+33                          0.00216730
+34                          0.00216730
+35                          0.00406755
+36                          0.00406755
+37                          0.00439697
+38                          0.00439697
+39                          0.00226939
+40                          0.00339567
+41                          0.00206484
+42                          0.00206484
+43                          0.00099598
+44                          0.00099598
+45                          0.00041206
+46                          0.00009974
+47                          0.00000032
+48                          0.00000032
+49                          0.00388172
+Sum orbitals c^2: 28.00000000
+----------------------------------------
+Most important dets:
+Excite Lv         Coef      Det (Reordered orb)
+0           0.65327150      |  0  1  2  3  4  5  6  7  8  9 10 11 12 13 |  0  1  2  3  4  5  6  7  8  9 10 11 12 13 |
+2          -0.23099740      |  0  1  2  3  4  5  6  7  8  9 10 11 13 20 |  0  1  2  3  4  5  6  7  8  9 10 11 13 20 |
+2          -0.23099740      |  0  1  2  3  4  5  6  7  8  9 10 12 13 21 |  0  1  2  3  4  5  6  7  8  9 10 12 13 21 |
+2           0.16670856      |  0  1  2  3  4  5  6  7  8  9 10 11 13 20 |  0  1  2  3  4  5  6  7  8  9 10 12 13 21 |
+2           0.14601854      |  0  1  2  3  4  5  6  7  8  9 10 12 13 20 |  0  1  2  3  4  5  6  7  8  9 10 11 13 21 |
+4           0.12985015      |  0  1  2  3  4  5  6  7  8  9 10 13 20 21 |  0  1  2  3  4  5  6  7  8  9 10 13 20 21 |
+2          -0.11701730      |  0  1  2  3  4  5  6  7  8  9 10 11 12 14 |  0  1  2  3  4  5  6  7  8  9 10 11 12 14 |
+2           0.09829526      |  0  1  2  3  4  5  6  7  8  9 11 12 13 18 |  0  1  2  3  4  5  6  7  8 10 11 12 13 19 |
+2           0.09424598      |  0  1  2  3  4  5  6  7  8  9 10 11 12 14 |  0  1  2  3  4  5  6  7  8  9 11 12 13 18 |
+2          -0.09424598      |  0  1  2  3  4  5  6  7  8  9 10 11 12 14 |  0  1  2  3  4  5  6  7  8 10 11 12 13 19 |
+2          -0.09365717      |  0  1  2  3  4  5  6  7  8  9 11 12 13 18 |  0  1  2  3  4  5  6  7  8  9 11 12 13 18 |
+2          -0.09365717      |  0  1  2  3  4  5  6  7  8 10 11 12 13 19 |  0  1  2  3  4  5  6  7  8 10 11 12 13 19 |
+2           0.08929077      |  0  1  2  3  4  5  6  7  8 10 11 12 13 19 |  0  1  2  3  4  5  6  7  8  9 10 11 13 20 |
+2           0.08929077      |  0  1  2  3  4  5  6  7  8  9 11 12 13 18 |  0  1  2  3  4  5  6  7  8  9 10 12 13 21 |
+2          -0.08894518      |  0  1  2  3  4  5  6  7  8  9 10 11 12 14 |  0  1  2  3  4  5  6  7  8  9 10 12 13 21 |
+2           0.08894518      |  0  1  2  3  4  5  6  7  8  9 10 11 12 14 |  0  1  2  3  4  5  6  7  8  9 10 11 13 20 |
+2           0.08668453      |  0  1  2  3  4  5  6  7  8  9 10 11 13 14 |  0  1  2  3  4  5  6  7  8  9 10 11 12 20 |
+2          -0.08668453      |  0  1  2  3  4  5  6  7  8  9 10 12 13 14 |  0  1  2  3  4  5  6  7  8  9 10 11 12 21 |
+2          -0.08666731      |  0  1  2  3  4  5  6  7  8  9 11 12 13 18 |  0  1  2  3  4  5  6  7  8  9 10 11 13 20 |
+2          -0.08666731      |  0  1  2  3  4  5  6  7  8 10 11 12 13 19 |  0  1  2  3  4  5  6  7  8  9 10 12 13 21 |
+----------------------------------------
+HF energy: -2098.4529210963 Ha
+Variational energy: -2099.8100021711 Ha
+Memory total: 394.9GB
+Helper size: 0.1GB
+Bytes per det: 32
+Memory var: 0.3GB
+Memory PT limit: 386.5GB
+
+BEG OF dtm 2.00e-06 << eps_var 2.00e-04 << perturbation [1.9/5.7]GB [5.580/0.000/2220.050]s
+Number of dtm batches: 1
+END OF determine number of dtm batches [1.9/5.7]GB [0.400/0.400/2220.450]s
+
+BEG OF #1/1 << dtm 2.00e-06 << eps_var 2.00e-04 << perturbation [1.9/5.7]GB [0.001/0.000/2220.451]s
+20% 40% 60% 80% 100% 
+Number of dtm pt dets: 2,281,403,078
+END OF create hc sums [197.1/200.9]GB [852.363/852.363/3072.814]s
+PT dtm batch correction: -0.0826449706 Ha
+PT dtm correction (eps1= 2.00e-04): -0.0826449706 +- 0.0000000000 Ha
+PT dtm total energy (eps1= 2.00e-04): -2099.8926471416 +- 0.0000000000 Ha
+Correlation energy (eps1= 2.00e-04): -1.4397260454 +- 0.0000000000 Ha
+END OF #1/1 << dtm 2.00e-06 << eps_var 2.00e-04 << perturbation [197.0/200.9]GB [681.349/1533.711/3754.162]s
+END OF dtm 2.00e-06 << eps_var 2.00e-04 << perturbation [197.0/200.9]GB [0.002/1534.113/3754.163]s
+
+BEG OF psto 1.00e-07 << eps_var 2.00e-04 << perturbation [2.6/6.4]GB [0.666/0.000/3754.829]s
+Number of psto batches: 18
+END OF determine number of psto batches [2.7/6.6]GB [4.624/4.624/3759.453]s
+
+BEG OF #1/18 << psto 1.00e-07 << eps_var 2.00e-04 << perturbation [2.7/6.6]GB [0.011/0.001/3759.463]s
+20% 40% 60% 80% 100% 
+Number of psto pt dets: 2,292,783,864
+END OF create hc sums [175.5/179.3]GB [825.759/825.759/4585.222]s
+PT psto batch correction: -0.0000798563 Ha
+PT psto correction (eps1= 2.00e-04): -0.0014374140 +- 0.0000064993 Ha
+PT psto total energy (eps1= 2.00e-04): -2099.8940845557 +- 0.0000064993 Ha
+Correlation energy (eps1= 2.00e-04): -1.4411634594 +- 0.0000064993 Ha
+END OF #1/18 << psto 1.00e-07 << eps_var 2.00e-04 << perturbation [175.5/179.3]GB [751.010/1576.768/5336.231]s
+END OF psto 1.00e-07 << eps_var 2.00e-04 << perturbation [175.5/179.3]GB [0.001/1581.403/5336.231]s
+
+BEG OF sto 2.00e-10 << eps_var 2.00e-04 << perturbation [2.6/6.5]GB [0.647/0.000/5336.878]s
+Number of samples chosen: 477,026
+END OF determine n samples [2.6/6.5]GB [0.931/0.931/5337.809]s
+
+BEG OF #1 << sto 2.00e-10 << eps_var 2.00e-04 << perturbation [2.6/6.5]GB [0.010/0.000/5337.809]s
+Number of unique variational determinants in sample: 362,345
+Batch id: 17 / 64
+20% 40% 60% 80% 100% 
+Number of sto pt dets: 406,216,401
+END OF create hc sums [39.2/43.1]GB [168.893/168.893/5506.702]s
+PT sto loop correction: 0.0000138623 Ha
+PT sto correction (eps1= 2.00e-04): 0.0000138623 +- -nan Ha
+PT sto total energy (eps1= 2.00e-04): -2099.8940706933 +- -nan Ha
+Correlation energy (eps1= 2.00e-04): -1.4411495970 +- -nan Ha
+END OF #1 << sto 2.00e-10 << eps_var 2.00e-04 << perturbation [39.2/43.1]GB [135.734/304.617/5642.426]s
+
+BEG OF #2 << sto 2.00e-10 << eps_var 2.00e-04 << perturbation [39.2/43.1]GB [0.001/0.000/5642.426]s
+Number of unique variational determinants in sample: 362,397
+Batch id: 16 / 64
+20% 40% 60% 80% 100% 
+Number of sto pt dets: 406,222,676
+END OF create hc sums [39.2/43.1]GB [140.048/140.048/5782.474]s
+PT sto loop correction: 0.0000136669 Ha
+PT sto correction (eps1= 2.00e-04): 0.0000137646 +- 0.0000000977 Ha
+PT sto total energy (eps1= 2.00e-04): -2099.8940707911 +- 0.0000065000 Ha
+Correlation energy (eps1= 2.00e-04): -1.4411496948 +- 0.0000065000 Ha
+END OF #2 << sto 2.00e-10 << eps_var 2.00e-04 << perturbation [39.2/43.1]GB [136.708/276.747/5919.173]s
+
+BEG OF #3 << sto 2.00e-10 << eps_var 2.00e-04 << perturbation [39.2/43.1]GB [0.001/0.000/5919.173]s
+Number of unique variational determinants in sample: 362,145
+Batch id: 47 / 64
+20% 40% 60% 80% 100% 
+Number of sto pt dets: 405,811,833
+END OF create hc sums [39.2/43.1]GB [140.696/140.696/6059.869]s
+PT sto loop correction: 0.0000159593 Ha
+PT sto correction (eps1= 2.00e-04): 0.0000144962 +- 0.0000007337 Ha
+PT sto total energy (eps1= 2.00e-04): -2099.8940700595 +- 0.0000065406 Ha
+Correlation energy (eps1= 2.00e-04): -1.4411489632 +- 0.0000065406 Ha
+END OF #3 << sto 2.00e-10 << eps_var 2.00e-04 << perturbation [39.2/43.1]GB [136.576/277.263/6196.436]s
+
+BEG OF #4 << sto 2.00e-10 << eps_var 2.00e-04 << perturbation [39.2/43.1]GB [0.001/0.000/6196.436]s
+Number of unique variational determinants in sample: 362,538
+Batch id: 36 / 64
+20% 40% 60% 80% 100% 
+Number of sto pt dets: 406,260,784
+END OF create hc sums [39.2/43.1]GB [137.598/137.598/6334.034]s
+PT sto loop correction: 0.0000118131 Ha
+PT sto correction (eps1= 2.00e-04): 0.0000138254 +- 0.0000008480 Ha
+PT sto total energy (eps1= 2.00e-04): -2099.8940707303 +- 0.0000065544 Ha
+Correlation energy (eps1= 2.00e-04): -1.4411496340 +- 0.0000065544 Ha
+END OF #4 << sto 2.00e-10 << eps_var 2.00e-04 << perturbation [39.2/43.1]GB [134.149/271.737/6468.173]s
+
+BEG OF #5 << sto 2.00e-10 << eps_var 2.00e-04 << perturbation [39.2/43.1]GB [0.001/0.000/6468.174]s
+Number of unique variational determinants in sample: 362,505
+Batch id: 5 / 64
+20% 40% 60% 80% 100% 
+Number of sto pt dets: 406,215,537
+END OF create hc sums [39.2/43.1]GB [135.318/135.318/6603.491]s
+PT sto loop correction: 0.0000129854 Ha
+PT sto correction (eps1= 2.00e-04): 0.0000136574 +- 0.0000006780 Ha
+PT sto total energy (eps1= 2.00e-04): -2099.8940708983 +- 0.0000065346 Ha
+Correlation energy (eps1= 2.00e-04): -1.4411498020 +- 0.0000065346 Ha
+END OF #5 << sto 2.00e-10 << eps_var 2.00e-04 << perturbation [39.2/43.1]GB [135.110/270.419/6738.592]s
+
+BEG OF #6 << sto 2.00e-10 << eps_var 2.00e-04 << perturbation [39.2/43.1]GB [0.001/0.000/6738.592]s
+Number of unique variational determinants in sample: 362,568
+Batch id: 31 / 64
+20% 40% 60% 80% 100% 
+Number of sto pt dets: 406,224,831
+END OF create hc sums [39.2/43.1]GB [136.852/136.852/6875.444]s
+PT sto loop correction: 0.0000162410 Ha
+PT sto correction (eps1= 2.00e-04): 0.0000140880 +- 0.0000007013 Ha
+PT sto total energy (eps1= 2.00e-04): -2099.8940704677 +- 0.0000065370 Ha
+Correlation energy (eps1= 2.00e-04): -1.4411493714 +- 0.0000065370 Ha
+END OF #6 << sto 2.00e-10 << eps_var 2.00e-04 << perturbation [39.2/43.1]GB [134.256/271.100/7009.692]s
+
+BEG OF #7 << sto 2.00e-10 << eps_var 2.00e-04 << perturbation [39.2/43.1]GB [0.001/0.000/7009.692]s
+Number of unique variational determinants in sample: 362,464
+Batch id: 18 / 64
+20% 40% 60% 80% 100% 
+Number of sto pt dets: 406,257,150
+END OF create hc sums [39.4/43.2]GB [129.392/129.392/7139.084]s
+PT sto loop correction: 0.0000163480 Ha
+PT sto correction (eps1= 2.00e-04): 0.0000144108 +- 0.0000006750 Ha
+PT sto total energy (eps1= 2.00e-04): -2099.8940701448 +- 0.0000065343 Ha
+Correlation energy (eps1= 2.00e-04): -1.4411490485 +- 0.0000065343 Ha
+END OF #7 << sto 2.00e-10 << eps_var 2.00e-04 << perturbation [39.4/43.2]GB [133.450/262.831/7272.523]s
+
+BEG OF #8 << sto 2.00e-10 << eps_var 2.00e-04 << perturbation [39.4/43.2]GB [0.001/0.000/7272.523]s
+Number of unique variational determinants in sample: 362,591
+Batch id: 57 / 64
+20% 40% 60% 80% 100% 
+Number of sto pt dets: 406,386,873
+END OF create hc sums [39.4/43.2]GB [129.093/129.093/7401.617]s
+PT sto loop correction: 0.0000111282 Ha
+PT sto correction (eps1= 2.00e-04): 0.0000140005 +- 0.0000007142 Ha
+PT sto total energy (eps1= 2.00e-04): -2099.8940705551 +- 0.0000065384 Ha
+Correlation energy (eps1= 2.00e-04): -1.4411494589 +- 0.0000065384 Ha
+END OF #8 << sto 2.00e-10 << eps_var 2.00e-04 << perturbation [39.4/43.2]GB [135.630/264.709/7537.233]s
+
+BEG OF #9 << sto 2.00e-10 << eps_var 2.00e-04 << perturbation [39.4/43.2]GB [0.001/0.000/7537.233]s
+Number of unique variational determinants in sample: 362,793
+Batch id: 21 / 64
+20% 40% 60% 80% 100% 
+Number of sto pt dets: 406,647,434
+END OF create hc sums [39.4/43.2]GB [136.298/136.298/7673.530]s
+PT sto loop correction: 0.0000114405 Ha
+PT sto correction (eps1= 2.00e-04): 0.0000137161 +- 0.0000006911 Ha
+PT sto total energy (eps1= 2.00e-04): -2099.8940708396 +- 0.0000065359 Ha
+Correlation energy (eps1= 2.00e-04): -1.4411497433 +- 0.0000065359 Ha
+END OF #9 << sto 2.00e-10 << eps_var 2.00e-04 << perturbation [39.4/43.2]GB [134.303/270.592/7807.825]s
+
+BEG OF #10 << sto 2.00e-10 << eps_var 2.00e-04 << perturbation [39.4/43.2]GB [0.001/0.000/7807.825]s
+Number of unique variational determinants in sample: 362,515
+Batch id: 27 / 64
+20% 40% 60% 80% 100% 
+Number of sto pt dets: 406,272,010
+END OF create hc sums [39.5/43.4]GB [138.620/138.620/7946.444]s
+PT sto loop correction: 0.0000113964 Ha
+PT sto correction (eps1= 2.00e-04): 0.0000134841 +- 0.0000006602 Ha
+PT sto total energy (eps1= 2.00e-04): -2099.8940710716 +- 0.0000065328 Ha
+Correlation energy (eps1= 2.00e-04): -1.4411499753 +- 0.0000065328 Ha
+END OF #10 << sto 2.00e-10 << eps_var 2.00e-04 << perturbation [39.5/43.4]GB [134.816/273.427/8081.252]s
+END OF sto 2.00e-10 << eps_var 2.00e-04 << perturbation [39.5/43.4]GB [0.001/2744.375/8081.252]s
+Total energy: -2099.8940710716 +- 0.0000065328 Ha
+END OF eps_var 2.00e-04 << perturbation [2.6/6.5]GB [0.184/5866.966/8081.436]s
+
+BEG OF eps_var 1.00e-04 << perturbation [2.6/6.5]GB [0.000/0.000/8081.436]s
+Try Loading Wavefunction wf_eps1_1.00e-04.dat
+Loaded 4,321,440 dets from: wf_eps1_1.00e-04.dat
+Effect dets (without time sym): 8,635,858
+----------------------------------------
+Excite Lv       # dets         Sum c^2
+0                    1      0.40091750
+1                  180      0.00191121
+2                68397      0.38307499
+3               656900      0.01315815
+4              3342499      0.14904623
+5              1227770      0.00933903
+6              2148200      0.03275540
+7               504098      0.00334774
+8               518620      0.00510660
+9                98764      0.00073031
+10               59852      0.00053808
+11                7612      0.00006170
+12                2867      0.00001296
+13                  98      0.00000012
+----------------------------------------
+Orbital                        Sum c^2
+0                           1.99548859
+1                           1.99557671
+2                           1.98895254
+3                           1.98820880
+4                           1.98820880
+5                           1.98654281
+6                           1.98654281
+7                           1.98452461
+8                           1.91531072
+9                           1.79170697
+10                          1.79170697
+11                          1.54894297
+12                          1.54894297
+13                          1.76531932
+14                          0.22363830
+15                          0.02572513
+16                          0.02572513
+17                          0.01392265
+18                          0.19639816
+19                          0.19639816
+20                          0.43340973
+21                          0.43340973
+22                          0.03761186
+23                          0.00463388
+24                          0.00375927
+25                          0.00375927
+26                          0.00764608
+27                          0.00946122
+28                          0.00946122
+29                          0.00429549
+30                          0.00253074
+31                          0.01282343
+32                          0.01282343
+33                          0.00228820
+34                          0.00228820
+35                          0.00428721
+36                          0.00428721
+37                          0.00487590
+38                          0.00487590
+39                          0.00239938
+40                          0.00379836
+41                          0.00231218
+42                          0.00231218
+43                          0.00121496
+44                          0.00121496
+45                          0.00060451
+46                          0.00015523
+47                          0.00000066
+48                          0.00000066
+49                          0.00407603
+Sum orbitals c^2: 28.00000000
+----------------------------------------
+Most important dets:
+Excite Lv         Coef      Det (Reordered orb)
+0           0.63318046      |  0  1  2  3  4  5  6  7  8  9 10 11 12 13 |  0  1  2  3  4  5  6  7  8  9 10 11 12 13 |
+2          -0.23118608      |  0  1  2  3  4  5  6  7  8  9 10 11 13 20 |  0  1  2  3  4  5  6  7  8  9 10 11 13 20 |
+2          -0.23118608      |  0  1  2  3  4  5  6  7  8  9 10 12 13 21 |  0  1  2  3  4  5  6  7  8  9 10 12 13 21 |
+2           0.15736632      |  0  1  2  3  4  5  6  7  8  9 10 11 13 20 |  0  1  2  3  4  5  6  7  8  9 10 12 13 21 |
+2           0.15581803      |  0  1  2  3  4  5  6  7  8  9 10 12 13 20 |  0  1  2  3  4  5  6  7  8  9 10 11 13 21 |
+4           0.12698826      |  0  1  2  3  4  5  6  7  8  9 10 13 20 21 |  0  1  2  3  4  5  6  7  8  9 10 13 20 21 |
+2          -0.11396975      |  0  1  2  3  4  5  6  7  8  9 10 11 12 14 |  0  1  2  3  4  5  6  7  8  9 10 11 12 14 |
+2           0.09414351      |  0  1  2  3  4  5  6  7  8  9 11 12 13 18 |  0  1  2  3  4  5  6  7  8 10 11 12 13 19 |
+2          -0.09221671      |  0  1  2  3  4  5  6  7  8  9 11 12 13 18 |  0  1  2  3  4  5  6  7  8  9 11 12 13 18 |
+2          -0.09221671      |  0  1  2  3  4  5  6  7  8 10 11 12 13 19 |  0  1  2  3  4  5  6  7  8 10 11 12 13 19 |
+2           0.09160475      |  0  1  2  3  4  5  6  7  8  9 10 11 13 14 |  0  1  2  3  4  5  6  7  8  9 10 11 12 20 |
+2          -0.09160475      |  0  1  2  3  4  5  6  7  8  9 10 12 13 14 |  0  1  2  3  4  5  6  7  8  9 10 11 12 21 |
+2           0.09091461      |  0  1  2  3  4  5  6  7  8  9 10 11 12 14 |  0  1  2  3  4  5  6  7  8  9 11 12 13 18 |
+2          -0.09091461      |  0  1  2  3  4  5  6  7  8  9 10 11 12 14 |  0  1  2  3  4  5  6  7  8 10 11 12 13 19 |
+2           0.08857194      |  0  1  2  3  4  5  6  7  8  9 10 12 13 18 |  0  1  2  3  4  5  6  7  8  9 11 12 13 21 |
+2           0.08857194      |  0  1  2  3  4  5  6  7  8  9 10 11 13 19 |  0  1  2  3  4  5  6  7  8 10 11 12 13 20 |
+2           0.08779285      |  0  1  2  3  4  5  6  7  8  9 11 12 13 18 |  0  1  2  3  4  5  6  7  8  9 10 12 13 21 |
+2           0.08779285      |  0  1  2  3  4  5  6  7  8 10 11 12 13 19 |  0  1  2  3  4  5  6  7  8  9 10 11 13 20 |
+2          -0.08771418      |  0  1  2  3  4  5  6  7  8  9 10 11 12 14 |  0  1  2  3  4  5  6  7  8  9 10 12 13 21 |
+2           0.08771418      |  0  1  2  3  4  5  6  7  8  9 10 11 12 14 |  0  1  2  3  4  5  6  7  8  9 10 11 13 20 |
+----------------------------------------
+HF energy: -2098.4529210963 Ha
+Variational energy: -2099.8354938889 Ha
+Memory total: 394.9GB
+Helper size: 0.1GB
+Bytes per det: 32
+Memory var: 0.9GB
+Memory PT limit: 385.6GB
+
+BEG OF dtm 2.00e-06 << eps_var 1.00e-04 << perturbation [3.8/7.6]GB [6.242/0.000/8087.678]s
+Number of dtm batches: 2
+END OF determine number of dtm batches [3.8/7.6]GB [0.519/0.519/8088.197]s
+
+BEG OF #1/2 << dtm 2.00e-06 << eps_var 1.00e-04 << perturbation [3.8/7.6]GB [0.001/0.000/8088.198]s
+20% 40% 60% 80% 100% 
+Number of dtm pt dets: 1,324,531,332
+END OF create hc sums [119.5/123.3]GB [585.235/585.235/8673.433]s
+PT dtm batch correction: -0.0310341047 Ha
+PT dtm correction (eps1= 1.00e-04): -0.0620682095 +- 0.0000077316 Ha
+PT dtm total energy (eps1= 1.00e-04): -2099.8975620984 +- 0.0000077316 Ha
+Correlation energy (eps1= 1.00e-04): -1.4446410021 +- 0.0000077316 Ha
+END OF #1/2 << dtm 2.00e-06 << eps_var 1.00e-04 << perturbation [119.4/123.3]GB [376.302/961.537/9049.735]s
+
+BEG OF #2/2 << dtm 2.00e-06 << eps_var 1.00e-04 << perturbation [119.4/123.3]GB [0.001/0.000/9049.735]s
+20% 40% 60% 80% 100% 
+Number of dtm pt dets: 1,324,460,171
+END OF create hc sums [122.3/126.2]GB [459.867/459.867/9509.602]s
+PT dtm batch correction: -0.0310210278 Ha
+PT dtm correction (eps1= 1.00e-04): -0.0620551326 +- 0.0000000000 Ha
+PT dtm total energy (eps1= 1.00e-04): -2099.8975490215 +- 0.0000000000 Ha
+Correlation energy (eps1= 1.00e-04): -1.4446279252 +- 0.0000000000 Ha
+END OF #2/2 << dtm 2.00e-06 << eps_var 1.00e-04 << perturbation [122.3/126.2]GB [376.249/836.116/9885.850]s
+END OF dtm 2.00e-06 << eps_var 1.00e-04 << perturbation [122.3/126.2]GB [0.001/1798.173/9885.851]s
+
+BEG OF psto 1.00e-07 << eps_var 1.00e-04 << perturbation [3.6/7.4]GB [0.429/0.001/9886.280]s
+Number of psto batches: 33
+END OF determine number of psto batches [4.1/7.9]GB [8.372/8.372/9894.651]s
+
+BEG OF #1/33 << psto 1.00e-07 << eps_var 1.00e-04 << perturbation [4.1/7.9]GB [0.018/0.000/9894.669]s
+20% 40% 60% 80% 100% 
+Number of psto pt dets: 2,115,122,663
+END OF create hc sums [175.6/179.4]GB [857.404/857.404/10752.073]s
+PT psto batch correction: -0.0000945789 Ha
+PT psto correction (eps1= 1.00e-04): -0.0031211053 +- 0.0000071893 Ha
+PT psto total energy (eps1= 1.00e-04): -2099.9006701267 +- 0.0000071893 Ha
+Correlation energy (eps1= 1.00e-04): -1.4477490304 +- 0.0000071893 Ha
+END OF #1/33 << psto 1.00e-07 << eps_var 1.00e-04 << perturbation [175.6/179.4]GB [672.282/1529.685/11424.353]s
+
+BEG OF #2/33 << psto 1.00e-07 << eps_var 1.00e-04 << perturbation [175.6/179.4]GB [0.002/0.000/11424.354]s
+20% 40% 60% 80% 100% 
+Number of psto pt dets: 2,115,107,204
+END OF create hc sums [175.8/179.7]GB [756.890/756.890/12181.244]s
+PT psto batch correction: -0.0000946585 Ha
+PT psto correction (eps1= 1.00e-04): -0.0031224177 +- 0.0000049124 Ha
+PT psto total energy (eps1= 1.00e-04): -2099.9006714392 +- 0.0000049124 Ha
+Correlation energy (eps1= 1.00e-04): -1.4477503429 +- 0.0000049124 Ha
+END OF #2/33 << psto 1.00e-07 << eps_var 1.00e-04 << perturbation [175.8/179.7]GB [677.151/1434.041/12858.394]s
+END OF psto 1.00e-07 << eps_var 1.00e-04 << perturbation [175.8/179.7]GB [0.001/2972.116/12858.394]s
+
+BEG OF sto 1.00e-10 << eps_var 1.00e-04 << perturbation [3.7/7.5]GB [0.633/0.001/12859.028]s
+Number of samples chosen: 472,103
+END OF determine n samples [3.7/7.5]GB [1.063/1.063/12860.090]s
+
+BEG OF #1 << sto 1.00e-10 << eps_var 1.00e-04 << perturbation [3.7/7.5]GB [0.014/0.000/12860.090]s
+Number of unique variational determinants in sample: 406,318
+Batch id: 46 / 64
+20% 40% 60% 80% 100% 
+Number of sto pt dets: 477,239,815
+END OF create hc sums [42.8/46.6]GB [169.757/169.757/13029.847]s
+PT sto loop correction: 0.0000365625 Ha
+PT sto correction (eps1= 1.00e-04): 0.0000365625 +- -nan Ha
+PT sto total energy (eps1= 1.00e-04): -2099.9006348766 +- -nan Ha
+Correlation energy (eps1= 1.00e-04): -1.4477137803 +- -nan Ha
+END OF #1 << sto 1.00e-10 << eps_var 1.00e-04 << perturbation [42.7/46.6]GB [156.902/326.648/13186.738]s
+
+BEG OF #2 << sto 1.00e-10 << eps_var 1.00e-04 << perturbation [42.7/46.6]GB [0.001/0.000/13186.738]s
+Number of unique variational determinants in sample: 405,658
+Batch id: 55 / 64
+20% 40% 60% 80% 100% 
+Number of sto pt dets: 476,523,813
+END OF create hc sums [44.8/48.6]GB [140.842/140.842/13327.580]s
+PT sto loop correction: 0.0000421832 Ha
+PT sto correction (eps1= 1.00e-04): 0.0000393729 +- 0.0000028103 Ha
+PT sto total energy (eps1= 1.00e-04): -2099.9006320663 +- 0.0000056595 Ha
+Correlation energy (eps1= 1.00e-04): -1.4477109700 +- 0.0000056595 Ha
+END OF #2 << sto 1.00e-10 << eps_var 1.00e-04 << perturbation [44.8/48.6]GB [157.626/298.458/13485.196]s
+
+BEG OF #3 << sto 1.00e-10 << eps_var 1.00e-04 << perturbation [44.8/48.6]GB [0.001/0.000/13485.196]s
+Number of unique variational determinants in sample: 405,884
+Batch id: 50 / 64
+20% 40% 60% 80% 100% 
+Number of sto pt dets: 476,682,367
+END OF create hc sums [46.8/50.6]GB [148.902/148.902/13634.098]s
+PT sto loop correction: 0.0000332568 Ha
+PT sto correction (eps1= 1.00e-04): 0.0000373342 +- 0.0000026056 Ha
+PT sto total energy (eps1= 1.00e-04): -2099.9006341050 +- 0.0000055607 Ha
+Correlation energy (eps1= 1.00e-04): -1.4477130087 +- 0.0000055607 Ha
+END OF #3 << sto 1.00e-10 << eps_var 1.00e-04 << perturbation [46.7/50.6]GB [153.638/302.527/13787.723]s
+
+BEG OF #4 << sto 1.00e-10 << eps_var 1.00e-04 << perturbation [46.7/50.6]GB [0.001/0.000/13787.723]s
+Number of unique variational determinants in sample: 405,499
+Batch id: 30 / 64
+20% 40% 60% 80% 100% 
+Number of sto pt dets: 476,126,307
+END OF create hc sums [48.7/52.5]GB [142.495/142.495/13930.217]s
+PT sto loop correction: 0.0000289102 Ha
+PT sto correction (eps1= 1.00e-04): 0.0000352282 +- 0.0000027982 Ha
+PT sto total energy (eps1= 1.00e-04): -2099.9006362110 +- 0.0000056535 Ha
+Correlation energy (eps1= 1.00e-04): -1.4477151147 +- 0.0000056535 Ha
+END OF #4 << sto 1.00e-10 << eps_var 1.00e-04 << perturbation [48.7/52.5]GB [157.444/299.925/14087.648]s
+
+BEG OF #5 << sto 1.00e-10 << eps_var 1.00e-04 << perturbation [48.7/52.5]GB [0.002/0.000/14087.649]s
+Number of unique variational determinants in sample: 405,975
+Batch id: 51 / 64
+20% 40% 60% 80% 100% 
+Number of sto pt dets: 476,592,869
+END OF create hc sums [49.8/53.6]GB [145.284/145.284/14232.932]s
+PT sto loop correction: 0.0000263204 Ha
+PT sto correction (eps1= 1.00e-04): 0.0000334466 +- 0.0000028057 Ha
+PT sto total energy (eps1= 1.00e-04): -2099.9006379925 +- 0.0000056572 Ha
+Correlation energy (eps1= 1.00e-04): -1.4477168963 +- 0.0000056572 Ha
+END OF #5 << sto 1.00e-10 << eps_var 1.00e-04 << perturbation [49.8/53.6]GB [156.778/302.049/14389.698]s
+
+BEG OF #6 << sto 1.00e-10 << eps_var 1.00e-04 << perturbation [49.8/53.6]GB [0.001/0.000/14389.698]s
+Number of unique variational determinants in sample: 406,067
+Batch id: 48 / 64
+20% 40% 60% 80% 100% 
+Number of sto pt dets: 476,690,365
+END OF create hc sums [51.8/55.6]GB [145.196/145.196/14534.894]s
+PT sto loop correction: 0.0000314995 Ha
+PT sto correction (eps1= 1.00e-04): 0.0000331221 +- 0.0000023137 Ha
+PT sto total energy (eps1= 1.00e-04): -2099.9006383171 +- 0.0000054300 Ha
+Correlation energy (eps1= 1.00e-04): -1.4477172208 +- 0.0000054300 Ha
+END OF #6 << sto 1.00e-10 << eps_var 1.00e-04 << perturbation [51.8/55.6]GB [157.434/302.618/14692.316]s
+
+BEG OF #7 << sto 1.00e-10 << eps_var 1.00e-04 << perturbation [51.8/55.6]GB [0.001/0.000/14692.316]s
+Number of unique variational determinants in sample: 405,846
+Batch id: 11 / 64
+20% 40% 60% 80% 100% 
+Number of sto pt dets: 476,656,924
+END OF create hc sums [53.1/56.9]GB [145.106/145.106/14837.422]s
+PT sto loop correction: 0.0000264446 Ha
+PT sto correction (eps1= 1.00e-04): 0.0000321682 +- 0.0000021757 Ha
+PT sto total energy (eps1= 1.00e-04): -2099.9006392710 +- 0.0000053727 Ha
+Correlation energy (eps1= 1.00e-04): -1.4477181747 +- 0.0000053727 Ha
+END OF #7 << sto 1.00e-10 << eps_var 1.00e-04 << perturbation [53.1/56.9]GB [155.575/300.669/14992.985]s
+
+BEG OF #8 << sto 1.00e-10 << eps_var 1.00e-04 << perturbation [53.1/56.9]GB [0.001/0.000/14992.985]s
+Number of unique variational determinants in sample: 405,994
+Batch id: 55 / 64
+20% 40% 60% 80% 100% 
+Number of sto pt dets: 476,644,357
+END OF create hc sums [53.7/57.5]GB [142.968/142.968/15135.953]s
+PT sto loop correction: 0.0000373638 Ha
+PT sto correction (eps1= 1.00e-04): 0.0000328176 +- 0.0000019930 Ha
+PT sto total energy (eps1= 1.00e-04): -2099.9006386215 +- 0.0000053013 Ha
+Correlation energy (eps1= 1.00e-04): -1.4477175253 +- 0.0000053013 Ha
+END OF #8 << sto 1.00e-10 << eps_var 1.00e-04 << perturbation [53.7/57.5]GB [153.068/296.026/15289.011]s
+
+BEG OF #9 << sto 1.00e-10 << eps_var 1.00e-04 << perturbation [53.7/57.5]GB [0.001/0.000/15289.011]s
+Number of unique variational determinants in sample: 405,809
+Batch id: 14 / 64
+20% 40% 60% 80% 100% 
+Number of sto pt dets: 476,476,735
+END OF create hc sums [54.4/58.2]GB [146.076/146.076/15435.087]s
+PT sto loop correction: 0.0000349752 Ha
+PT sto correction (eps1= 1.00e-04): 0.0000330574 +- 0.0000017739 Ha
+PT sto total energy (eps1= 1.00e-04): -2099.9006383818 +- 0.0000052229 Ha
+Correlation energy (eps1= 1.00e-04): -1.4477172855 +- 0.0000052229 Ha
+END OF #9 << sto 1.00e-10 << eps_var 1.00e-04 << perturbation [54.4/58.2]GB [154.661/300.727/15589.738]s
+
+BEG OF #10 << sto 1.00e-10 << eps_var 1.00e-04 << perturbation [54.4/58.2]GB [0.001/0.000/15589.738]s
+Number of unique variational determinants in sample: 406,064
+Batch id: 59 / 64
+20% 40% 60% 80% 100% 
+Number of sto pt dets: 476,951,751
+END OF create hc sums [54.9/58.8]GB [144.172/144.172/15733.910]s
+PT sto loop correction: 0.0000367092 Ha
+PT sto correction (eps1= 1.00e-04): 0.0000334225 +- 0.0000016281 Ha
+PT sto total energy (eps1= 1.00e-04): -2099.9006380166 +- 0.0000051752 Ha
+Correlation energy (eps1= 1.00e-04): -1.4477169203 +- 0.0000051752 Ha
+END OF #10 << sto 1.00e-10 << eps_var 1.00e-04 << perturbation [54.9/58.8]GB [157.089/301.250/15890.988]s
+END OF sto 1.00e-10 << eps_var 1.00e-04 << perturbation [54.9/58.8]GB [0.063/3032.023/15891.050]s
+Total energy: -2099.9006380166 +- 0.0000051752 Ha
+END OF eps_var 1.00e-04 << perturbation [3.7/7.6]GB [0.298/7809.912/15891.349]s
+
+BEG OF eps_var 5.00e-05 << perturbation [3.7/7.6]GB [0.000/0.000/15891.349]s
+Try Loading Wavefunction wf_eps1_5.00e-05.dat
+Loaded 13,033,363 dets from: wf_eps1_5.00e-05.dat
+Effect dets (without time sym): 26,054,770
+----------------------------------------
+Excite Lv       # dets         Sum c^2
+0                    1      0.37875680
+1                  192      0.00190044
+2                76881      0.38810373
+3              1452540      0.01459962
+4              8699043      0.15823595
+5              4466134      0.01088808
+6              6894266      0.03609790
+7              1846816      0.00400267
+8              1870370      0.00577630
+9               414860      0.00090777
+10              268516      0.00062879
+11               49304      0.00008187
+12               14724      0.00001960
+13                 858      0.00000045
+14                 265      0.00000002
+----------------------------------------
+Orbital                        Sum c^2
+0                           1.99525645
+1                           1.99532769
+2                           1.98835364
+3                           1.98758378
+4                           1.98758378
+5                           1.98588847
+6                           1.98588847
+7                           1.98376430
+8                           1.89966634
+9                           1.78178839
+10                          1.78178839
+11                          1.52814927
+12                          1.52814927
+13                          1.75510461
+14                          0.23211300
+15                          0.03003155
+16                          0.03003155
+17                          0.01587755
+18                          0.20475692
+19                          0.20475692
+20                          0.45160027
+21                          0.45160027
+22                          0.04538295
+23                          0.00530937
+24                          0.00421805
+25                          0.00421805
+26                          0.00833069
+27                          0.01013504
+28                          0.01013504
+29                          0.00450074
+30                          0.00271512
+31                          0.01392614
+32                          0.01392614
+33                          0.00240051
+34                          0.00240051
+35                          0.00450432
+36                          0.00450432
+37                          0.00539352
+38                          0.00539352
+39                          0.00251768
+40                          0.00420020
+41                          0.00255981
+42                          0.00255981
+43                          0.00144433
+44                          0.00144433
+45                          0.00084293
+46                          0.00022145
+47                          0.00000097
+48                          0.00000097
+49                          0.00425210
+Sum orbitals c^2: 28.00000000
+----------------------------------------
+Most important dets:
+Excite Lv         Coef      Det (Reordered orb)
+0           0.61543221      |  0  1  2  3  4  5  6  7  8  9 10 11 12 13 |  0  1  2  3  4  5  6  7  8  9 10 11 12 13 |
+2          -0.23271781      |  0  1  2  3  4  5  6  7  8  9 10 11 13 20 |  0  1  2  3  4  5  6  7  8  9 10 11 13 20 |
+2          -0.23271781      |  0  1  2  3  4  5  6  7  8  9 10 12 13 21 |  0  1  2  3  4  5  6  7  8  9 10 12 13 21 |
+2           0.16321145      |  0  1  2  3  4  5  6  7  8  9 10 12 13 20 |  0  1  2  3  4  5  6  7  8  9 10 11 13 21 |
+2           0.15226751      |  0  1  2  3  4  5  6  7  8  9 10 11 13 20 |  0  1  2  3  4  5  6  7  8  9 10 12 13 21 |
+4           0.12628267      |  0  1  2  3  4  5  6  7  8  9 10 13 20 21 |  0  1  2  3  4  5  6  7  8  9 10 13 20 21 |
+2          -0.11195128      |  0  1  2  3  4  5  6  7  8  9 10 11 12 14 |  0  1  2  3  4  5  6  7  8  9 10 11 12 14 |
+2           0.09413645      |  0  1  2  3  4  5  6  7  8  9 10 11 13 14 |  0  1  2  3  4  5  6  7  8  9 10 11 12 20 |
+2          -0.09413645      |  0  1  2  3  4  5  6  7  8  9 10 12 13 14 |  0  1  2  3  4  5  6  7  8  9 10 11 12 21 |
+2           0.09132138      |  0  1  2  3  4  5  6  7  8  9 11 12 13 18 |  0  1  2  3  4  5  6  7  8 10 11 12 13 19 |
+2          -0.09113365      |  0  1  2  3  4  5  6  7  8  9 11 12 13 18 |  0  1  2  3  4  5  6  7  8  9 11 12 13 18 |
+2          -0.09113365      |  0  1  2  3  4  5  6  7  8 10 11 12 13 19 |  0  1  2  3  4  5  6  7  8 10 11 12 13 19 |
+2           0.09110590      |  0  1  2  3  4  5  6  7  8  9 10 11 13 19 |  0  1  2  3  4  5  6  7  8 10 11 12 13 20 |
+2           0.09110590      |  0  1  2  3  4  5  6  7  8  9 10 12 13 18 |  0  1  2  3  4  5  6  7  8  9 11 12 13 21 |
+2          -0.08833683      |  0  1  2  3  4  5  6  7  8  9 10 11 12 14 |  0  1  2  3  4  5  6  7  8 10 11 12 13 19 |
+2           0.08833683      |  0  1  2  3  4  5  6  7  8  9 10 11 12 14 |  0  1  2  3  4  5  6  7  8  9 11 12 13 18 |
+2           0.08625570      |  0  1  2  3  4  5  6  7  8  9 11 12 13 18 |  0  1  2  3  4  5  6  7  8  9 10 12 13 21 |
+2           0.08625570      |  0  1  2  3  4  5  6  7  8 10 11 12 13 19 |  0  1  2  3  4  5  6  7  8  9 10 11 13 20 |
+2          -0.08625019      |  0  1  2  3  4  5  6  7  8  9 10 11 12 14 |  0  1  2  3  4  5  6  7  8  9 10 12 13 21 |
+2           0.08625019      |  0  1  2  3  4  5  6  7  8  9 10 11 12 14 |  0  1  2  3  4  5  6  7  8  9 10 11 13 20 |
+----------------------------------------
+HF energy: -2098.4529210963 Ha
+Variational energy: -2099.8559096031 Ha
+Memory total: 394.9GB
+Helper size: 0.1GB
+Bytes per det: 32
+Memory var: 2.7GB
+Memory PT limit: 383.1GB
+
+BEG OF dtm 2.00e-06 << eps_var 5.00e-05 << perturbation [7.1/10.9]GB [19.421/0.000/15910.769]s
+Number of dtm batches: 2
+END OF determine number of dtm batches [7.1/10.9]GB [0.774/0.774/15911.544]s
+
+BEG OF #1/2 << dtm 2.00e-06 << eps_var 5.00e-05 << perturbation [7.1/10.9]GB [0.001/0.000/15911.545]s
+20% 40% 60% 80% 100% 
+Number of dtm pt dets: 1,457,549,118
+END OF create hc sums [107.3/111.1]GB [829.722/829.722/16741.267]s
+PT dtm batch correction: -0.0221953927 Ha
+PT dtm correction (eps1= 5.00e-05): -0.0443907855 +- 0.0000035280 Ha
+PT dtm total energy (eps1= 5.00e-05): -2099.9003003886 +- 0.0000035280 Ha
+Correlation energy (eps1= 5.00e-05): -1.4473792923 +- 0.0000035280 Ha
+END OF #1/2 << dtm 2.00e-06 << eps_var 5.00e-05 << perturbation [107.3/111.1]GB [394.732/1224.454/17135.998]s
+
+BEG OF #2/2 << dtm 2.00e-06 << eps_var 5.00e-05 << perturbation [107.3/111.1]GB [0.001/0.000/17135.998]s
+20% 40% 60% 80% 100% 
+Number of dtm pt dets: 1,457,492,050
+END OF create hc sums [108.0/111.9]GB [749.587/749.587/17885.585]s
+PT dtm batch correction: -0.0221831475 Ha
+PT dtm correction (eps1= 5.00e-05): -0.0443785402 +- 0.0000000000 Ha
+PT dtm total energy (eps1= 5.00e-05): -2099.9002881433 +- 0.0000000000 Ha
+Correlation energy (eps1= 5.00e-05): -1.4473670470 +- 0.0000000000 Ha
+END OF #2/2 << dtm 2.00e-06 << eps_var 5.00e-05 << perturbation [108.0/111.8]GB [395.611/1145.197/18281.195]s
+END OF dtm 2.00e-06 << eps_var 5.00e-05 << perturbation [108.0/111.8]GB [0.002/2370.426/18281.196]s
+
+BEG OF psto 1.00e-07 << eps_var 5.00e-05 << perturbation [7.1/11.0]GB [0.356/0.000/18281.551]s
+Number of psto batches: 57
+END OF determine number of psto batches [8.1/11.9]GB [15.667/15.667/18297.218]s
+
+BEG OF #1/57 << psto 1.00e-07 << eps_var 5.00e-05 << perturbation [8.1/11.9]GB [0.032/0.000/18297.249]s
+20% 40% 60% 80% 100% 
+Number of psto pt dets: 1,882,082,995
+END OF create hc sums [177.4/181.3]GB [993.697/993.697/19290.946]s
+PT psto batch correction: -0.0000987438 Ha
+PT psto correction (eps1= 5.00e-05): -0.0056283954 +- 0.0000068595 Ha
+PT psto total energy (eps1= 5.00e-05): -2099.9059165387 +- 0.0000068595 Ha
+Correlation energy (eps1= 5.00e-05): -1.4529954424 +- 0.0000068595 Ha
+END OF #1/57 << psto 1.00e-07 << eps_var 5.00e-05 << perturbation [177.4/181.3]GB [578.218/1571.914/19869.163]s
+END OF psto 1.00e-07 << eps_var 5.00e-05 << perturbation [177.4/181.3]GB [0.001/1587.612/19869.163]s
+
+BEG OF sto 5.00e-11 << eps_var 5.00e-05 << perturbation [7.6/11.4]GB [0.799/0.000/19869.962]s
+Number of samples chosen: 436,173
+END OF determine n samples [7.6/11.4]GB [0.964/0.964/19870.925]s
+
+BEG OF #1 << sto 5.00e-11 << eps_var 5.00e-05 << perturbation [7.6/11.4]GB [0.013/0.000/19870.925]s
+Number of unique variational determinants in sample: 402,640
+Batch id: 1 / 64
+20% 40% 60% 80% 100% 
+Number of sto pt dets: 494,365,280
+END OF create hc sums [50.7/54.5]GB [178.798/178.798/20049.723]s
+PT sto loop correction: 0.0000411366 Ha
+PT sto correction (eps1= 5.00e-05): 0.0000411366 +- -nan Ha
+PT sto total energy (eps1= 5.00e-05): -2099.9058754020 +- -nan Ha
+Correlation energy (eps1= 5.00e-05): -1.4529543058 +- -nan Ha
+END OF #1 << sto 5.00e-11 << eps_var 5.00e-05 << perturbation [50.7/54.5]GB [157.480/336.266/20207.191]s
+
+BEG OF #2 << sto 5.00e-11 << eps_var 5.00e-05 << perturbation [50.7/54.5]GB [0.001/0.000/20207.191]s
+Number of unique variational determinants in sample: 402,931
+Batch id: 18 / 64
+20% 40% 60% 80% 100% 
+Number of sto pt dets: 494,567,373
+END OF create hc sums [55.6/59.5]GB [151.242/151.242/20358.433]s
+PT sto loop correction: 0.0000390345 Ha
+PT sto correction (eps1= 5.00e-05): 0.0000400856 +- 0.0000010511 Ha
+PT sto total energy (eps1= 5.00e-05): -2099.9058764531 +- 0.0000069396 Ha
+Correlation energy (eps1= 5.00e-05): -1.4529553568 +- 0.0000069396 Ha
+END OF #2 << sto 5.00e-11 << eps_var 5.00e-05 << perturbation [55.6/59.5]GB [160.436/311.665/20518.856]s
+
+BEG OF #3 << sto 5.00e-11 << eps_var 5.00e-05 << perturbation [55.6/59.5]GB [0.001/0.000/20518.857]s
+Number of unique variational determinants in sample: 402,795
+Batch id: 36 / 64
+20% 40% 60% 80% 100% 
+Number of sto pt dets: 494,553,442
+END OF create hc sums [58.7/62.5]GB [148.870/148.870/20667.726]s
+PT sto loop correction: 0.0000354249 Ha
+PT sto correction (eps1= 5.00e-05): 0.0000385320 +- 0.0000016679 Ha
+PT sto total energy (eps1= 5.00e-05): -2099.9058780066 +- 0.0000070594 Ha
+Correlation energy (eps1= 5.00e-05): -1.4529569104 +- 0.0000070594 Ha
+END OF #3 << sto 5.00e-11 << eps_var 5.00e-05 << perturbation [58.7/62.5]GB [158.452/307.310/20826.166]s
+
+BEG OF #4 << sto 5.00e-11 << eps_var 5.00e-05 << perturbation [58.7/62.5]GB [0.001/0.000/20826.166]s
+Number of unique variational determinants in sample: 402,452
+Batch id: 28 / 64
+20% 40% 60% 80% 100% 
+Number of sto pt dets: 494,109,521
+END OF create hc sums [60.6/64.5]GB [147.477/147.477/20973.643]s
+PT sto loop correction: 0.0000367030 Ha
+PT sto correction (eps1= 5.00e-05): 0.0000380748 +- 0.0000012649 Ha
+PT sto total energy (eps1= 5.00e-05): -2099.9058784639 +- 0.0000069752 Ha
+Correlation energy (eps1= 5.00e-05): -1.4529573676 +- 0.0000069752 Ha
+END OF #4 << sto 5.00e-11 << eps_var 5.00e-05 << perturbation [60.6/64.5]GB [155.992/303.457/21129.623]s
+
+BEG OF #5 << sto 5.00e-11 << eps_var 5.00e-05 << perturbation [60.6/64.5]GB [0.001/0.000/21129.623]s
+Number of unique variational determinants in sample: 402,624
+Batch id: 19 / 64
+20% 40% 60% 80% 100% 
+Number of sto pt dets: 494,280,730
+END OF create hc sums [61.4/65.2]GB [144.416/144.416/21274.039]s
+PT sto loop correction: 0.0000264969 Ha
+PT sto correction (eps1= 5.00e-05): 0.0000357592 +- 0.0000025143 Ha
+PT sto total energy (eps1= 5.00e-05): -2099.9058807795 +- 0.0000073058 Ha
+Correlation energy (eps1= 5.00e-05): -1.4529596832 +- 0.0000073058 Ha
+END OF #5 << sto 5.00e-11 << eps_var 5.00e-05 << perturbation [61.4/65.2]GB [159.035/303.440/21433.063]s
+
+BEG OF #6 << sto 5.00e-11 << eps_var 5.00e-05 << perturbation [61.4/65.2]GB [0.001/0.000/21433.063]s
+Number of unique variational determinants in sample: 402,608
+Batch id: 16 / 64
+20% 40% 60% 80% 100% 
+Number of sto pt dets: 494,238,620
+END OF create hc sums [61.8/65.7]GB [141.855/141.855/21574.918]s
+PT sto loop correction: 0.0000613705 Ha
+PT sto correction (eps1= 5.00e-05): 0.0000400277 +- 0.0000047366 Ha
+PT sto total energy (eps1= 5.00e-05): -2099.9058765109 +- 0.0000083360 Ha
+Correlation energy (eps1= 5.00e-05): -1.4529554146 +- 0.0000083360 Ha
+END OF #6 << sto 5.00e-11 << eps_var 5.00e-05 << perturbation [61.8/65.7]GB [158.724/300.567/21733.630]s
+
+BEG OF #7 << sto 5.00e-11 << eps_var 5.00e-05 << perturbation [61.8/65.7]GB [0.001/0.000/21733.630]s
+Number of unique variational determinants in sample: 402,795
+Batch id: 56 / 64
+20% 40% 60% 80% 100% 
+Number of sto pt dets: 494,607,170
+END OF create hc sums [63.1/67.0]GB [141.925/141.925/21875.555]s
+PT sto loop correction: 0.0000304468 Ha
+PT sto correction (eps1= 5.00e-05): 0.0000386590 +- 0.0000042307 Ha
+PT sto total energy (eps1= 5.00e-05): -2099.9058778796 +- 0.0000080592 Ha
+Correlation energy (eps1= 5.00e-05): -1.4529567833 +- 0.0000080592 Ha
+END OF #7 << sto 5.00e-11 << eps_var 5.00e-05 << perturbation [63.1/66.9]GB [158.322/300.235/22033.865]s
+
+BEG OF #8 << sto 5.00e-11 << eps_var 5.00e-05 << perturbation [63.1/66.9]GB [0.001/0.000/22033.865]s
+Number of unique variational determinants in sample: 402,982
+Batch id: 60 / 64
+20% 40% 60% 80% 100% 
+Number of sto pt dets: 494,614,158
+END OF create hc sums [63.5/67.4]GB [141.725/141.725/22175.590]s
+PT sto loop correction: 0.0000283111 Ha
+PT sto correction (eps1= 5.00e-05): 0.0000373656 +- 0.0000038855 Ha
+PT sto total energy (eps1= 5.00e-05): -2099.9058791731 +- 0.0000078835 Ha
+Correlation energy (eps1= 5.00e-05): -1.4529580768 +- 0.0000078835 Ha
+END OF #8 << sto 5.00e-11 << eps_var 5.00e-05 << perturbation [63.5/67.4]GB [158.471/300.185/22334.050]s
+
+BEG OF #9 << sto 5.00e-11 << eps_var 5.00e-05 << perturbation [63.5/67.4]GB [0.002/0.000/22334.050]s
+Number of unique variational determinants in sample: 402,407
+Batch id: 30 / 64
+20% 40% 60% 80% 100% 
+Number of sto pt dets: 493,955,485
+END OF create hc sums [63.9/67.7]GB [142.397/142.397/22476.447]s
+PT sto loop correction: 0.0000622379 Ha
+PT sto correction (eps1= 5.00e-05): 0.0000401291 +- 0.0000044022 Ha
+PT sto total energy (eps1= 5.00e-05): -2099.9058764095 +- 0.0000081506 Ha
+Correlation energy (eps1= 5.00e-05): -1.4529553132 +- 0.0000081506 Ha
+END OF #9 << sto 5.00e-11 << eps_var 5.00e-05 << perturbation [63.9/67.7]GB [157.450/299.836/22633.886]s
+
+BEG OF #10 << sto 5.00e-11 << eps_var 5.00e-05 << perturbation [63.9/67.7]GB [0.001/0.000/22633.886]s
+Number of unique variational determinants in sample: 402,306
+Batch id: 24 / 64
+20% 40% 60% 80% 100% 
+Number of sto pt dets: 493,969,016
+END OF create hc sums [64.1/67.9]GB [140.785/140.785/22774.671]s
+PT sto loop correction: 0.0000448541 Ha
+PT sto correction (eps1= 5.00e-05): 0.0000406016 +- 0.0000039657 Ha
+PT sto total energy (eps1= 5.00e-05): -2099.9058759370 +- 0.0000079234 Ha
+Correlation energy (eps1= 5.00e-05): -1.4529548407 +- 0.0000079234 Ha
+END OF #10 << sto 5.00e-11 << eps_var 5.00e-05 << perturbation [64.1/67.9]GB [157.903/298.677/22932.564]s
+END OF sto 5.00e-11 << eps_var 5.00e-05 << perturbation [64.1/67.9]GB [0.001/3062.603/22932.564]s
+Total energy: -2099.9058759370 +- 0.0000079234 Ha
+END OF eps_var 5.00e-05 << perturbation [7.2/11.0]GB [0.310/7041.525/22932.874]s
+END OF perturbation [7.2/11.0]GB [0.001/20718.404/22932.874]s

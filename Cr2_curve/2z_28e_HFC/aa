@@ -1,0 +1,8 @@
+for file in r1.68 r1.80 r2.00 r2.25 r2.50 r2.75
+do
+  echo $file
+  cd $file
+  sbatch ~/shci_runs/ba*3k*128*sh
+  cd -
+# sleep 1000
+done

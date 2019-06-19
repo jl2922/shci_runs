@@ -1,0 +1,8 @@
+for file in r1.50 r1.55 r1.60 r1.68 r1.80 r2.00 r2.25 r2.50 r2.75 r3.00 r3.25
+do
+  echo $file
+  mkdir $file
+  cd $file
+  ln -s /home/cyrus/shci_opt_runs/Cr2/2z_28e_HFcore/$file/FCIDUMP_optorb FCIDUMP
+  cd -
+done
