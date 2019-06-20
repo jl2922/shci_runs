@@ -108,13 +108,13 @@ def plot_shci():
     es = []
     e_atom = -1049.9325698806
     for r in rs:
-        result_file = '2z_28e/r%.2f/result.json' % r
+        result_file = '2z_28e_HFC/r%.2f/result.json' % r
         energy, uncert = get_extrapolated_energy(result_file, 6)
         es.append((energy - e_atom * 2) * HA2EV)
     f = interp1d(rs, es, kind='cubic')
     x_fit = np.linspace(1.5, 3.25, num=500)
     curve_2z_28e, = plt.plot(x_fit, f(x_fit), color='blue', linestyle='solid')
-    plt.plot(rs, es, color='blue', marker='o', linestyle='none')
+    plt.plot(rs, es, color='blue', marker='o', linestyle='none', alpha=0.7)
 
     return curve_2z_28e
 
@@ -150,13 +150,13 @@ def plot():
     plt.ylabel('Atomization Energy (eV)')
     plt.title('Cr$_2$ Potential Energy Curve with 28e and cc-pVDZ')
     curves = (curve_uhf, curve_ccsd, curve_ccsdt, curve_2z_28e, curve_experiment)
-    labels = ('UHF', 'CCSD', 'CCSD(T)', 'SHCI', 'Experiment')
+    labels = ('UHF', 'UCCSD', 'UCCSD(T)', 'SHCI', 'Experiment')
     plt.legend(curves, labels)
     ax = plt.gca()
     ax.ticklabel_format(useOffset=False)
     plt.tight_layout()
     plt.grid(True, ls=':')
-    plt.savefig('cr2curve.eps')
+    plt.savefig('hfcc.png', format='png', dpi=300)
     plt.show()
 
 if __name__ == '__main__':

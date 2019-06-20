@@ -91,8 +91,8 @@ def plot_shci():
         es.append((energy - e_atom * 2) * HA2EV)
     f = interp1d(rs, es, kind='cubic')
     x_fit = np.linspace(1.5, 3.25, num=500)
-    curve_2z_12e, = plt.plot(x_fit, f(x_fit), color='orange', linestyle='dashed')
-    plt.plot(rs, es, color='orange', marker='o', linestyle='none', alpha=0.5)
+    curve_2z_12e, = plt.plot(x_fit, f(x_fit), color='red', linestyle='solid')
+    plt.plot(rs, es, color='red', marker='o', linestyle='none', alpha=0.7)
 
     es = []
     e_atom = -1049.7603535316
@@ -102,19 +102,28 @@ def plot_shci():
         es.append((energy - e_atom * 2) * HA2EV)
     f = interp1d(rs, es, kind='cubic')
     x_fit = np.linspace(1.5, 3.25, num=500)
-    curve_3z_12e, = plt.plot(x_fit, f(x_fit), color='green', linestyle='dashed')
-    plt.plot(rs, es, color='green', marker='o', linestyle='none', alpha=0.5)
+    curve_3z_12e, = plt.plot(x_fit, f(x_fit), color='orange', linestyle='solid')
+    plt.plot(rs, es, color='orange', marker='o', linestyle='none', alpha=0.7)
 
     es = []
-    e_atom = -1049.9325698806
-    for r in rs:
-        result_file = '2z_28e/r%.2f/result.json' % r
-        energy, uncert = get_extrapolated_energy(result_file, 6)
-        es.append((energy - e_atom * 2) * HA2EV)
+    e_atom = -1049.7682
+    df = pd.read_csv('4z_12e/energies.csv')
+    es = (df['energy'].values - 2 * e_atom) * HA2EV
     f = interp1d(rs, es, kind='cubic')
     x_fit = np.linspace(1.5, 3.25, num=500)
-    curve_2z_28e, = plt.plot(x_fit, f(x_fit), color='blue', linestyle='dashed')
-    plt.plot(rs, es, color='blue', marker='o', linestyle='none', alpha=0.5)
+    curve_4z_12e, = plt.plot(x_fit, f(x_fit), color='green', linestyle='solid')
+    plt.plot(rs, es, color='green', marker='o', linestyle='none', alpha=0.7)
+
+    #es = []
+    #e_atom = -1049.9325698806
+    #for r in rs:
+    #    result_file = '2z_28e/r%.2f/result.json' % r
+    #    energy, uncert = get_extrapolated_energy(result_file, 6)
+    #    es.append((energy - e_atom * 2) * HA2EV)
+    #f = interp1d(rs, es, kind='cubic')
+    #x_fit = np.linspace(1.5, 3.25, num=500)
+    #curve_2z_28e, = plt.plot(x_fit, f(x_fit), color='blue', linestyle='dashed')
+    #plt.plot(rs, es, color='blue', marker='o', linestyle='none', alpha=0.5)
 
     es = []
     e_atom = -1049.9325698806
@@ -124,24 +133,25 @@ def plot_shci():
         es.append((energy - e_atom * 2) * HA2EV)
     f = interp1d(rs, es, kind='cubic')
     x_fit = np.linspace(1.5, 3.25, num=500)
-    curve_2z_28e_hfc, = plt.plot(x_fit, f(x_fit), color='blueviolet', linestyle='dashed')
-    plt.plot(rs, es, color='blueviolet', marker='o', linestyle='none', alpha=0.5)
+    curve_2z_28e_hfc, = plt.plot(x_fit, f(x_fit), color='blue', linestyle='solid')
+    plt.plot(rs, es, color='blue', marker='o', linestyle='none', alpha=0.7)
 
-    return curve_2z_12e, curve_3z_12e, curve_2z_28e, curve_2z_28e_hfc
+    return curve_2z_12e, curve_3z_12e, curve_4z_12e, curve_2z_28e_hfc
+    #return curve_2z_12e, curve_3z_12e, curve_2z_28e, curve_2z_28e_hfc
 
 def plot():
     plt.figure(figsize=(5.5, 4.0))
     params = {'mathtext.default': 'regular' }
     plt.rcParams.update(params)
     curve_experiment = plot_experiment()
-    curve_2z_12e, curve_3z_12e, curve_2z_28e, curve_2z_28e_hfc = plot_shci()
+    curve_2z_12e, curve_3z_12e, curve_4z_12e, curve_2z_28e_hfc = plot_shci()
     #curve_uhf, curve_ccsd, curve_ccsdt = plot_hfcc()
 
     plt.xlabel('Bond Length ($\AA$)')
     plt.ylabel('Atomization Energy (eV)')
-    plt.title('Cr$_2$ Potential Energy Curve')
-    curves = (curve_2z_12e, curve_3z_12e, curve_2z_28e, curve_2z_28e_hfc, curve_experiment)
-    labels = ('SHCI 12e cc-pVDZ (CAS Core)', 'SHCI 12e cc-pVTZ (CAS Core)', 'SHCI 28e cc-pVDZ (CAS Core)', 'SHCI 28e cc-pVDZ (HF Core)', 'Experiment')
+    plt.title('Cr$_2$ Potential Energy Curve from SHCI')
+    curves = (curve_2z_12e, curve_3z_12e, curve_4z_12e, curve_2z_28e_hfc, curve_experiment)
+    labels = ('SHCI 12e cc-pVDZ', 'SHCI 12e cc-pVTZ', 'SHCI 12e cc-pVQZ', 'SHCI 28e cc-pVDZ', 'Experiment')
     plt.legend(curves, labels)
     ax = plt.gca()
     ax.ticklabel_format(useOffset=False)
