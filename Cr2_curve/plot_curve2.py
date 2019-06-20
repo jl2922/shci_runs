@@ -113,7 +113,7 @@ def plot_shci():
         es.append((energy - e_atom * 2) * HA2EV)
     f = interp1d(rs, es, kind='cubic')
     x_fit = np.linspace(1.5, 3.25, num=500)
-    curve_2z_28e, = plt.plot(x_fit, f(x_fit), color='blue', linestyle='dashed')
+    curve_2z_28e, = plt.plot(x_fit, f(x_fit), color='blue', linestyle='solid')
     plt.plot(rs, es, color='blue', marker='o', linestyle='none')
 
     return curve_2z_28e
@@ -125,17 +125,17 @@ def plot_hfcc():
     e = df['PES_UHF'].values * HA2EV
     f = interp1d(r, e, kind='cubic')
     x_fit = np.linspace(2.0, 3.25, num=500)
-    curve_uhf, = plt.plot(x_fit, f(x_fit), color='red', linestyle='dashed')
+    curve_uhf, = plt.plot(x_fit, f(x_fit), color='red', linestyle='solid')
 
     e = df['PES_CCSD'].values * HA2EV
     f = interp1d(r, e, kind='cubic')
     x_fit = np.linspace(1.5, 3.25, num=500)
-    curve_ccsd, = plt.plot(x_fit, f(x_fit), color='orange', linestyle='dashed')
+    curve_ccsd, = plt.plot(x_fit, f(x_fit), color='orange', linestyle='solid')
 
     e = df['PES_CCSD_T'].values * HA2EV
     f = interp1d(r, e, kind='cubic')
     x_fit = np.linspace(1.5, 3.25, num=500)
-    curve_ccsdt, = plt.plot(x_fit, f(x_fit), color='green', linestyle='dashed')
+    curve_ccsdt, = plt.plot(x_fit, f(x_fit), color='green', linestyle='solid')
     return curve_uhf, curve_ccsd, curve_ccsdt
 
 def plot():
