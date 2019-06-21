@@ -98,7 +98,7 @@ def plot_shci():
     ys = []
     for r in rs:
         result_file = '2z_28e_HFC/r%.2f/result.json' % r
-        energy, uncert, y = get_extrapolated_energy(result_file, 5)
+        energy, uncert, y = get_extrapolated_energy(result_file, 6)
         es.append((energy - e_atom * 2) * HA2EV)
         ys.append((y - e_atom * 2) * HA2EV)
     f = interp1d(rs, es, kind='cubic')
